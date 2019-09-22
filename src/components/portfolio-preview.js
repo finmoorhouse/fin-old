@@ -3,16 +3,14 @@ import { Link } from 'gatsby';
 
 
 
-const PostPreview = ({ post }) => (
+const PortfolioPreview = ({ post }) => (
   
-    <div>
-        hello?
+    <div class = 'portfolio-box'>
       <h3>
         <Link to={post.path}>{post.title}</Link>
       </h3>
-      <p>{post.excerpt}</p>
     </div>
 
 );
 
-export default PostPreview;
+export default PortfolioPreview;

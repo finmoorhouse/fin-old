@@ -18,11 +18,12 @@ module.exports = {
       options:{
         defaultLayouts: {
           default: require.resolve('./src/components/layout.js')
-        }
+        },
       }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -40,6 +41,13 @@ module.exports = {
       options: {
         name: 'posts',
         path: `${__dirname}/src/posts/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'portfolio-posts',
+        path: `${__dirname}/src/portfolio-posts/`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
