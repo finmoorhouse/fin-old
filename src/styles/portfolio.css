@@ -3,3 +3,6 @@
     height:200px;
     width:400px;
 }
+.portfolio-box img{
+    filter:              grayscale(100%) contrast(1) ;
+}

@@ -11,6 +11,13 @@ const usePosts = () => {
             slug
             path
             type
+            featuredImage {
+              childImageSharp {
+                sizes(maxWidth:500){
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            } 
           }
           excerpt
         }
@@ -26,6 +33,7 @@ const usePosts = () => {
     path: post.frontmatter.path,
     excerpt: post.excerpt,
     type:post.frontmatter.type,
+    featuredImage:post.frontmatter.featuredImage,
   }));
 };
 

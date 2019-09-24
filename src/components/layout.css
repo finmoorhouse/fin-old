@@ -1,6 +1,7 @@
 html,body{
   font-family: monospace;
-  background-color: coral;
+  /*background-color: coral;*/
+  background-color: darkslategray;
   margin:0;
   padding:0;
 }
@@ -13,7 +14,7 @@ h1, h2, h3{
   float:left;
 }
 .content-div{
-  width:500px;
+  width:calc(100vw-200px);
   float:left;
   text-align:center;
 }

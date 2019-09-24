@@ -3,6 +3,8 @@ import Layout from '../components/layout';
 import usePortfolio from '../hooks/use-portfolio';
 import PortfolioPreview from '../components/portfolio-preview';
 import "../styles/portfolio.css"
+import Img from 'gatsby-image'
+import graphql from 'gatsby'
 
 export default () => {
   const posts = usePortfolio();
@@ -18,3 +20,4 @@ export default () => {
     </>
   );
 };
+
