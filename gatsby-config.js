@@ -43,13 +43,8 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'portfolio-posts',
-        path: `${__dirname}/src/portfolio-posts/`,
-      },
-    },
+
+ 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

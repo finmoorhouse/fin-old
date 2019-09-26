@@ -1,15 +1,22 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react"
+import { Link } from "gatsby"
 
-function MenuItem(props){
+function MenuItem(props) {
+  let isRoot = true
+  if (props.whereTo === "/") {
+    isRoot = false
+  }
   return (
-    <Link class = 'sidebar-menu-item' to={props.whereTo}>
-      <h3 >
+    <h3 class="sidebar-menu-item">
+      <Link
+        activeClassName="active"
+        partiallyActive={isRoot}
+        to={props.whereTo}
+      >
         {props.name}
-      </h3>
       </Link>
+    </h3>
   )
 }
 
-
-export default MenuItem;
+export default MenuItem

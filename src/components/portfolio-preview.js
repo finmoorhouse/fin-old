@@ -1,17 +1,17 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import Img from 'gatsby-image';
-
+import React from "react"
+import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 const PortfolioPreview = ({ post }) => (
-  
-    <div class = 'portfolio-box'>
-      <h3>
-        <Link to={post.path}>{post.title}</Link>
-        <Img sizes={post.featuredImage.childImageSharp.sizes} />
-      </h3>
-    </div>
+  <div class="portfolio-box">
+    <Link to={post.path}>
+      <Img sizes={post.featuredImage.childImageSharp.sizes} />
+      <h3 class="portfolio-title">{post.title}</h3>
+    </Link>
+    <h4 class="subtype">{post.subtype}</h4>
+    <hr />
+    <h4 class="portfolio-description">{post.subtitle}</h4>
+  </div>
+)
 
-);
-
-export default PortfolioPreview;
+export default PortfolioPreview

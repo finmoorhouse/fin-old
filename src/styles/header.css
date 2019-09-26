@@ -1,0 +1,27 @@
+.header-title {
+  font-family: "Karla";
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
+  font-size: 60px;
+  text-decoration: none;
+  color: black;
+  display: none;
+}
+.header-title a {
+  text-decoration: none;
+  color: black;
+}
+.sidebar-menu-item * {
+  font-family: "Karla", Courier, monospace;
+  /*text-transform: uppercase;*/
+  text-decoration: none;
+  font-size: 20px;
+  color: grey;
+  margin-top: 0;
+  display: inline;
+}
+
+.active {
+  color: black;
+}

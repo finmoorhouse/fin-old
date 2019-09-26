@@ -1,8 +1,48 @@
-.portfolio-box{
-    background-color:lightcoral;
-    height:200px;
-    width:400px;
+.portfolio-box {
+  /*background-color: grey;*/
+  width: 100%;
 }
-.portfolio-box img{
-    filter:              grayscale(100%) contrast(1) ;
+.portfolio-box img {
+  /*filter: grayscale(100%) contrast(1);*/
+}
+.portfolio-box a {
+  color: white;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 400px));
+  /*grid-template-rows: repeat(6, 200px);
+  grid-template-rows: repeat(4, 200px);*/
+  max-width: 1250px;
+  grid-gap: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  justify-items: center;
+  justify-content: center;
+}
+main {
+  background-color: #333;
+  color: white;
+}
+.subtype {
+  font-family: monospace;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.portfolio-title {
+  font-family: "Karla";
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.portfolio-description {
+  font-family: "Lora";
+  margin-top: 5px;
+  margin-bottom: 0;
 }
