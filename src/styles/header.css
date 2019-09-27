@@ -1,27 +1,52 @@
 .header-title {
-  font-family: "Karla";
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-  transform: rotate(-180deg);
-  font-size: 60px;
+  font-family: "Karla", "M+ 1M";
+  /*text-transform: uppercase;*/
+  /*font-weight: bolder;*/
+
   text-decoration: none;
-  color: black;
-  display: none;
+  font-size: 30px;
+  /*background-color: aquamarine;*/
+  /*height: 430px;*/
+  margin-left: 20px;
 }
 .header-title a {
   text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: inline;
+  width: 200px;
+}
+.header-line {
+  border: 1px solid #e6ddde;
+
+  margin-left: 40px;
+}
+.menu-wrapper {
+  /*background-color: peru;*/
+  height: 160px;
+  display: none;
+}
+.menu-button a {
   color: black;
+  text-decoration: none;
+}
+.menu-button {
+  text-align: right;
+  font-family: "Karla";
+  margin-top: -20px;
 }
 .sidebar-menu-item * {
   font-family: "Karla", Courier, monospace;
   /*text-transform: uppercase;*/
   text-decoration: none;
-  font-size: 20px;
-  color: grey;
+  font-size: 22px;
+  color: #777;
   margin-top: 0;
-  display: inline;
+  font-weight: normal;
 }
-
+.header-line {
+  display: none;
+}
 .active {
-  color: black;
+  color: #222; /*#654a4e;*/
+  font-weight: bold;
 }

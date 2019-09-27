@@ -34,10 +34,13 @@ const PostTemplate = function({ data: { mdx: post } }) {
   }
   return (
     <Layout>
-      <h1>{post.frontmatter.title}</h1>
-      <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
-      <MDXRenderer>{post.body}</MDXRenderer>
-      <Link to={backTo}>{"\u2665 back to all posts" + backTo}</Link>
+      <div class="page-wrapper">
+        <h1>{post.frontmatter.title}</h1>
+        <hr />
+        <h4>{post.frontmatter.type}</h4>
+        <MDXRenderer>{post.body}</MDXRenderer>
+        <Link to={backTo}>{"\u2665 back to all posts" + backTo}</Link>
+      </div>
     </Layout>
   )
 }

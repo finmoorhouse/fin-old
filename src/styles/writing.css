@@ -1,0 +1,18 @@
+.post-title {
+  font-family: "Karla";
+  font-size: 40px;
+}
+.post-title a {
+  color: black;
+  text-decoration: none;
+}
+.date-published {
+  color: white;
+  font-family: "Space Mono";
+}
+.post-line {
+  margin-left: 0;
+  max-width: 400px;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+}

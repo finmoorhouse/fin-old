@@ -5,12 +5,25 @@
 .portfolio-box img {
   /*filter: grayscale(100%) contrast(1);*/
 }
+.portfolio-container {
+  background-color: #333;
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/*.portfolio-image {
+  max-height: 10px;
+}*/
 .portfolio-box a {
   color: white;
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+.portfolio-line {
+  border: 2px solid white;
 }
 .portfolio-gallery {
   display: grid;
@@ -26,9 +39,11 @@
   justify-items: center;
   justify-content: center;
 }
-main {
-  background-color: #333;
-  color: white;
+.portfolio-style {
+  background-color: #dbc3a3;
+}
+.portfolio-header {
+  color: #dbc3a3;
 }
 .subtype {
   font-family: monospace;
@@ -40,9 +55,10 @@ main {
   font-family: "Karla";
   font-size: 30px;
   margin-bottom: 0;
+  color: white;
 }
 .portfolio-description {
-  font-family: "Lora";
+  font-family: Karla;
   margin-top: 5px;
   margin-bottom: 0;
 }

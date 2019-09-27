@@ -8,11 +8,13 @@ export default () => {
   return (
     <>
       <Layout>
-        <h1>My Writing</h1>
-        <h4>This is a short description of my writing. Why is it here?</h4>
-        {posts.map(post => {
-          return <PostPreview key={post.slug} post={post} />
-        })}
+        <div class="page-wrapper">
+          <h1>My Writing</h1>
+          <h4>This is a short description of my writing. Why is it here?</h4>
+          {posts.map(post => {
+            return <PostPreview key={post.slug} post={post} />
+          })}
+        </div>
       </Layout>
     </>
   )

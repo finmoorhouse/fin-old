@@ -9,12 +9,14 @@ export default () => {
   return (
     <>
       <Layout>
-        <h1>Portfolio</h1>
-        Filter by:
-        <div class="portfolio-gallery">
-          {posts.map(post => {
-            return <PortfolioPreview key={post.slug} post={post} />
-          })}
+        <div class="portfolio-container">
+          <div class="portfolio-gallery">
+            <h1 class="portfolio-header">Portfolio</h1>
+            <br />
+            {posts.map(post => {
+              return <PortfolioPreview key={post.slug} post={post} />
+            })}
+          </div>
         </div>
       </Layout>
     </>
