@@ -1,13 +1,14 @@
 .portfolio-box {
   /*background-color: grey;*/
   width: 100%;
+  /*background-color: white;*/
 }
 .portfolio-box img {
   /*filter: grayscale(100%) contrast(1);*/
 }
 .portfolio-container {
-  background-color: #333;
-  color: white;
+  /*background-color: #333;
+  color: white;*/
   margin: 0;
   padding: 0;
   border: 0;
@@ -16,14 +17,17 @@
   max-height: 10px;
 }*/
 .portfolio-box a {
-  color: white;
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 .portfolio-line {
-  border: 2px solid white;
+  border: 0.3px solid white; /*#dbc3a3;*/
+  margin: 0;
+  max-width: 500px;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 .portfolio-gallery {
   display: grid;
@@ -44,21 +48,33 @@
 }
 .portfolio-header {
   color: #dbc3a3;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .subtype {
-  font-family: monospace;
+  font-family: "Space Mono";
+  font-weight: normal;
+  text-align: center;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
 }
 .portfolio-title {
-  font-family: "Karla";
+  font-family: Karla, "Source Serif Pro";
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
   font-size: 30px;
   margin-bottom: 0;
-  color: white;
+  color: black;
+  text-align: center;
 }
 .portfolio-description {
-  font-family: Karla;
+  font-family: "Source Serif Pro";
+  padding-right: 6%;
+  padding-left: 6%;
+  font-weight: normal;
   margin-top: 5px;
   margin-bottom: 0;
+  color: #62625f;
 }

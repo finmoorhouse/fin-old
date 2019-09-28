@@ -9,8 +9,9 @@ export default () => {
     <>
       <Layout>
         <div class="page-wrapper">
-          <h1>My Writing</h1>
-          <h4>This is a short description of my writing. Why is it here?</h4>
+          <h1 class="page-title">My Writing</h1>
+          <hr />
+          <h4></h4>
           {posts.map(post => {
             return <PostPreview key={post.slug} post={post} />
           })}

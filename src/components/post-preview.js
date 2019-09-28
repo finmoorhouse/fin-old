@@ -7,7 +7,7 @@ const PostPreview = ({ post }) => (
       <Link to={post.path}>{post.title}</Link>
     </h3>
     <hr class="post-line" />
-    <h4 class="date-published">{post.type}</h4>
+    <h4 class="date-published">{post.type} published on 29th September</h4>
     <p>{post.excerpt}</p>
   </div>
 )

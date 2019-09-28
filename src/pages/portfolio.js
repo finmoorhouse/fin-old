@@ -9,15 +9,13 @@ export default () => {
   return (
     <>
       <Layout>
-        <div class="portfolio-container">
-          <div class="portfolio-gallery">
-            <h1 class="portfolio-header">Portfolio</h1>
-            <br />
-            {posts.map(post => {
-              return <PortfolioPreview key={post.slug} post={post} />
-            })}
-          </div>
+        <h1 class="portfolio-header">Portfolio</h1>
+        <div class="portfolio-gallery">
+          {posts.map(post => {
+            return <PortfolioPreview key={post.slug} post={post} />
+          })}
         </div>
+        <h2>Back to top</h2>
       </Layout>
     </>
   )
