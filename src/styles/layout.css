@@ -21,7 +21,7 @@ h3 {
   font-family: "Karla";
 }
 h1 {
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Karla", "Space Mono", "Source Serif Pro";
   font-weight: bold;
   color: white;
@@ -59,9 +59,7 @@ a {
   grid-template-columns: minmax(0, 200px) minmax(0, 2fr);
   grid-template-rows: 60px 1fr;
 }
-.index-wrapper {
-  padding-top: 10vh;
-}
+
 .index-wrapper p {
   font-size: 25px;
 }
@@ -111,7 +109,7 @@ main {
   }
   .sidebar-menu-item {
     text-align: right;
-    line-height: 200%;
+
     display: inherit;
   }
   h1 {
@@ -121,10 +119,20 @@ main {
     padding-top: calc(50vh - 160px);
   }
   .menu-wrapper {
+    position: relative;
+    z-index: 1;
+    height: 160px;
+    display: none;
+    width: 180px;
+    background: none;
     display: block;
+    padding-top: 0;
   }
   .menu-button {
     display: none;
+  }
+  .index-wrapper {
+    padding-top: 10vh;
   }
 }
 hr {
@@ -135,4 +143,12 @@ hr {
   text-align: left;
   align: left;
   margin-top: 5px;
+}
+@media all and (max-width: 635px) {
+  .header-title {
+    display: none;
+  }
+}
+.big {
+  font-size: 30px;
 }

@@ -21,18 +21,29 @@
   margin-left: 40px;
 }
 .menu-wrapper {
-  /*background-color: peru;*/
-  height: 160px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   display: none;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  text-align: center;
+  background: white;
+  padding-top: 20vh;
 }
 .menu-button a {
   color: black;
   text-decoration: none;
 }
 .menu-button {
-  text-align: right;
+  text-align: center;
+  color: black;
   font-family: "Karla";
-  margin-top: -20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 22px;
+  font-size: 20px;
 }
 .sidebar-menu-item * {
   font-family: "Karla", Courier, monospace;
@@ -42,6 +53,7 @@
   color: #777;
   margin-top: 0;
   font-weight: normal;
+  line-height: 200%;
 }
 .header-line {
   display: none;

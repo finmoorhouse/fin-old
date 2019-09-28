@@ -39,7 +39,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
         <hr />
         <h4>{post.frontmatter.type}</h4>
         <MDXRenderer>{post.body}</MDXRenderer>
-        <Link to={backTo}>{"\u2665 back to all posts" + backTo}</Link>
+        <Link to={backTo}>{"⟵ back to all posts" + backTo}</Link>
       </div>
     </Layout>
   )

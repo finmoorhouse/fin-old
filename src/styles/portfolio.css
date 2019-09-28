@@ -3,9 +3,7 @@
   width: 100%;
   /*background-color: white;*/
 }
-.portfolio-box img {
-  /*filter: grayscale(100%) contrast(1);*/
-}
+
 .portfolio-container {
   /*background-color: #333;
   color: white;*/
@@ -31,7 +29,7 @@
 }
 .portfolio-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(0, 300px));
   /*grid-template-rows: repeat(6, 200px);
   grid-template-rows: repeat(4, 200px);*/
   max-width: 1250px;
@@ -47,7 +45,7 @@
   background-color: #dbc3a3;
 }
 .portfolio-header {
-  color: #dbc3a3;
+  color: white; /*#dbc3a3;*/
   text-align: center;
   margin-bottom: 20px;
 }

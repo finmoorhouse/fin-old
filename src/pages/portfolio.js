@@ -15,7 +15,6 @@ export default () => {
             return <PortfolioPreview key={post.slug} post={post} />
           })}
         </div>
-        <h2>Back to top</h2>
       </Layout>
     </>
   )
