@@ -126,6 +126,11 @@ main {
     display: block;
     padding-top: 0;
   }
+  .centre {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+  }
   .menu-button {
     display: none;
   }

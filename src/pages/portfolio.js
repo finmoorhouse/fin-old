@@ -10,6 +10,7 @@ export default () => {
     <>
       <Layout>
         <h1 class="portfolio-header">Portfolio</h1>
+        <hr class="centre" />
         <div class="portfolio-gallery">
           {posts.map(post => {
             return <PortfolioPreview key={post.slug} post={post} />

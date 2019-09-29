@@ -14,16 +14,24 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-mdx',
-      options:{
+      resolve: "gatsby-plugin-mdx",
+      options: {
         defaultLayouts: {
-          default: require.resolve('./src/components/layout.js')
+          default: require.resolve("./src/components/layout.js"),
         },
-      }
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -37,14 +45,13 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'posts',
+        name: "posts",
         path: `${__dirname}/src/posts/`,
       },
     },
 
- 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
