@@ -38,7 +38,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
         <h1 class="page-title">{post.frontmatter.title}</h1>
 
         <hr />
-        <h4>{post.frontmatter.type}</h4>
+
         <MDXRenderer>{post.body}</MDXRenderer>
         <Link to={backTo}>{"⟵ back to " + backTo}</Link>
         <br />
