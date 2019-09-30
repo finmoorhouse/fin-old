@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import usePortfolio from "../hooks/use-portfolio"
 import PortfolioPreview from "../components/portfolio-preview"
 import "../styles/portfolio.css"
+import SEO from "../components/seo"
 
 export default () => {
   const posts = usePortfolio()
@@ -10,12 +11,13 @@ export default () => {
     <>
       <Layout>
         <h1 class="portfolio-header">Portfolio</h1>
-        <hr class="centre" />
+        <br />
         <div class="portfolio-gallery">
           {posts.map(post => {
             return <PortfolioPreview key={post.slug} post={post} />
           })}
         </div>
+        <br />
       </Layout>
     </>
   )

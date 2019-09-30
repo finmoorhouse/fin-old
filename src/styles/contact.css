@@ -1,0 +1,7 @@
+.obfuscate {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.obfuscate * {
+  display: none;
+}

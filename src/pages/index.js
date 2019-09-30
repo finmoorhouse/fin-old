@@ -20,9 +20,9 @@ const IndexPage = () => (
         <Link to="/portfolio/packhorse">documentary</Link> about a village pub.
       </p>
       <p>
-        I co-host a podcast called 'Vocal Thinkers', which features unusually
-        in-depth conversations with academics about their recent work. It's not
-        live yet, but I'll update this when it is.
+        I co-host a currently untitled podcast which features unusually in-depth
+        conversations with academics about their recent work. It's not live yet,
+        but I'll update this when it is.
       </p>
       <p>
         Lastly, I'm interested in{" "}

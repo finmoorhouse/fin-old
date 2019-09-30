@@ -16,8 +16,8 @@
   width: 200px;
 }
 .header-line {
-  border: 1px solid #e6ddde;
-
+  border: 1px solid #a8bebf;
+  margin-top: 12px;
   margin-left: 40px;
 }
 .menu-wrapper {

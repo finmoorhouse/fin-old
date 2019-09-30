@@ -1,6 +1,12 @@
+/*@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  src: url("../fonts/lora-bold-webfont.woff") format("woff");
+}*/
+
 html,
 body {
-  font-family: "Source Serif Pro", "Lato", "Lora", serif;
+  font-family: "Source Serif Pro", "Lora", serif;
   /*background-color: coral;*/
   margin: 0;
   padding: 0;
@@ -32,9 +38,14 @@ h1 {
 }
 h2 {
   font-size: 40px;
-  margin-bottom: 20px;
 }
-
+.skills h2 {
+  margin-bottom: 30px;
+  font-family: lora;
+}
+/*.skills h3 {
+  padding-left: 40px;
+}*/
 a {
   text-decoration-color: black;
   text-decoration-style: dotted;
@@ -137,6 +148,9 @@ main {
   .index-wrapper {
     padding-top: 10vh;
   }
+  .writing-wrapper {
+    padding-top: 7vh;
+  }
 }
 hr {
   color: white;
@@ -146,10 +160,19 @@ hr {
   text-align: left;
   align: left;
   margin-top: 5px;
+  margin-left: 16px;
 }
 @media all and (max-width: 635px) {
   .header-title {
     display: none;
+  }
+  h1 {
+    text-align: center;
+  }
+  hr {
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
   }
 }
 .big p {

@@ -21,11 +21,13 @@
   width: 100%;
 }
 .portfolio-line {
-  border: 0.3px solid white; /*#dbc3a3;*/
+  border-top: 1px solid #333; /*#dbc3a3;*/
+  border-bottom: 0px;
   margin: 0;
   max-width: 500px;
   margin-left: 30%;
   margin-right: 30%;
+  margin-top: 8px;
 }
 .portfolio-gallery {
   display: grid;
@@ -37,6 +39,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 12px;
+
   padding-right: 12px;
   justify-items: center;
   justify-content: center;
@@ -56,12 +59,13 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+  display: none;
 }
 .portfolio-title {
-  font-family: Karla, "Source Serif Pro";
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  font-family: Lora, "Source Serif Pro";
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 10px;
   font-size: 30px;
   margin-bottom: 0;
   color: black;
@@ -74,7 +78,7 @@
   font-weight: normal;
   margin-top: 5px;
   margin-bottom: 0;
-  color: #62625f;
+  color: #333;
 }
 .gatsby-resp-image-image {
   max-width: 100% !important;

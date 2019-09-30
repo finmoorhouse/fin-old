@@ -40,7 +40,9 @@ const PostTemplate = function({ data: { mdx: post } }) {
         <hr />
 
         <MDXRenderer>{post.body}</MDXRenderer>
-        <Link to={backTo}>{"⟵ back to " + backTo}</Link>
+        <Link className="big" to={backTo}>
+          {"⟵ back to " + backTo.slice(1)}
+        </Link>
         <br />
         <br />
       </div>
