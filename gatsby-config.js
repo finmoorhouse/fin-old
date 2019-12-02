@@ -50,19 +50,21 @@ module.exports = {
         name: "posts",
         path: `${__dirname}/src/posts/`,
       },
-      //resolve: `gatsby-plugin-google-analytics`,
-      //options: {
-      //trackingId: "UA-44315602-2",
-      // Defines where to place the tracking script - `true` in the head and `false` in the body
-      // head: true,
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+      trackingId: "UA-44315602-2",
+       //Defines where to place the tracking script - `true` in the head and `false` in the body
+       head: true,
       // exclude: [
       //  "/portfolio/**",
-      // ],
-      // Setting this parameter is optional
-      // anonymize: true,
-      // Setting this parameter is also optional
-      // respectDNT: true,
-      //},
+       //],
+     //  Setting this parameter is optional
+       anonymize: true,
+       //Setting this parameter is also optional
+       respectDNT: true,
+      },
     },
   ],
 }

@@ -21,6 +21,8 @@
   width: 100%;
 }
 .portfolio-line {
+  background-color: #333;
+  border-color: #333;
   border-top: 1px solid #333; /*#dbc3a3;*/
   border-bottom: 0px;
   margin: 0;

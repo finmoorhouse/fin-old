@@ -12,8 +12,10 @@ body {
   padding: 0;
 }
 p {
-  font-size: 20px;
+  font-size: 22px;
   text-align: left;
+  line-height: 1.4;
+ /* letter-spacing: -0.02em; */
 }
 h1,
 h2,
@@ -43,15 +45,18 @@ h2 {
   margin-bottom: 30px;
   font-family: lora;
 }
+.skills{
+  padding-top:20px;
+}
 /*.skills h3 {
   padding-left: 40px;
 }*/
 a {
-  text-decoration-color: black;
-  text-decoration-style: dotted;
+  text-decoration-color: whitesmoke;
+  /*text-decoration-style: dotted;*/
   text-decoration-skip-ink: auto;
-  text-decoration-thickness: 0.2em;
-  text-underline-offset: 1.5px;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 2px;
   color: black;
 }
 ::selection {
@@ -156,11 +161,11 @@ hr {
   color: white;
   margin: 0px;
   border: 4px solid white;
-  max-width: 300px;
+  max-width: 350px;
   text-align: left;
   align: left;
   margin-top: 5px;
-  margin-left: 16px;
+  margin-left: 0px;
 }
 @media all and (max-width: 635px) {
   .header-title {

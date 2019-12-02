@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div class="content-div">
+      <div className="content-div">
         <Helmet>
           <link
             href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora:700|Source+Serif+Pro&display=swap"
