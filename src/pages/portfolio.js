@@ -3,13 +3,15 @@ import Layout from "../components/layout"
 import usePortfolio from "../hooks/use-portfolio"
 import PortfolioPreview from "../components/portfolio-preview"
 import "../styles/portfolio.css"
+
 import SEO from "../components/seo"
 
 export default () => {
   const posts = usePortfolio()
   return (
     <>
-      <Layout>
+      <Layout path="portfolio-colour">
+      <SEO title="Portfolio" />
         <h1 class="portfolio-header">Portfolio</h1>
         <br />
         <div class="portfolio-gallery">

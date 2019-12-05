@@ -4,9 +4,11 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 
+
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
+  <Layout path="index-colour">
+   
+    <SEO title="About" />
     <div class="page-wrapper index-wrapper big">
       <h1 class="page-title">About me</h1>
       <hr />
@@ -39,6 +41,7 @@ const IndexPage = () => (
         </a>
       </p>
     </div>
+   
   </Layout>
 )
 

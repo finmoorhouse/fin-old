@@ -2,10 +2,11 @@
   font-family: "lora";
   font-size: 40px;
   font-weight: bold;
-  text-shadow: 2px 2px #a8bebf, -2px 2px #a8bebf, -2px -2px #a8bebf;
+  text-shadow: 2px 2px white, -2px 2px #fff, -2px -2px #fff;
 }
+
 .post-title a {
-  color: white;
+  color: #333;
   text-decoration: none;
 }
 .date-published {
@@ -15,8 +16,8 @@
 .post-line {
   margin-left: 0;
   max-width: 400px;
-  color: whitesmoke;
-  border: 2px solid whitesmoke;
+  color: #333;
+  border: 2px solid #333;
 }
 .writing-title {
   color: #333;

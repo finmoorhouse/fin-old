@@ -12,7 +12,7 @@ import Header from "./header"
 import "../styles/layout.css"
 import { Helmet } from "react-helmet"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, path  }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -28,12 +28,12 @@ const Layout = ({ children }) => {
       <div className="content-div">
         <Helmet>
           <link
-            href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora:700|Source+Serif+Pro&display=swap"
+            href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora:700|Merriweather&display=swap"
             rel="stylesheet"
           />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>
+        <main className={path}>
           {children}
           <footer></footer>
         </main>
@@ -45,5 +45,9 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+Layout.defaultProps = {
+  path: "unknown"
+}
+
 
 export default Layout
