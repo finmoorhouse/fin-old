@@ -1,26 +1,21 @@
 .post-title {
-  font-family: "lora";
+
   font-size: 40px;
   font-weight: bold;
   text-shadow: 2px 2px white, -2px 2px #fff, -2px -2px #fff;
 }
 
 .post-title a {
-  color: #333;
   text-decoration: none;
 }
 .date-published {
-  color: white;
   font-family: "Fira Code", "Space Mono";
 }
 .post-line {
   margin-left: 0;
   max-width: 280px;
   color: #333;
-  border: 2px solid #333;
-}
-.writing-title {
-  color: #333;
+  border: 0px solid #333;
 }
 .writing-hr {
   margin-bottom: 40px;
@@ -28,6 +23,10 @@
 }
 .excerpt {
   color: #222;
-  padding-right: 50px;
-  padding-left: 50px;
+  max-width:750px;
+  padding-right: 0px;
+  padding-left: 00px;
+}
+h2{
+  color:#272727;
 }

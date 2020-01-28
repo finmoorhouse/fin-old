@@ -5,15 +5,11 @@
 }
 
 .portfolio-container {
-  /*background-color: #333;
-  color: white;*/
   margin: 0;
   padding: 0;
   border: 0;
 }
-/*.portfolio-image {
-  max-height: 10px;
-}*/
+
 .portfolio-box a {
   text-decoration: none;
   margin-left: auto;
@@ -22,8 +18,8 @@
 }
 .portfolio-line {
   background-color: #eee;
-  border-color: #eee;
-  border-top: 2px solid #eee; /*#dbc3a3;*/
+  border-color: #dddddd;
+  border-top: 2px solid #dddddd; /*#dbc3a3;*/
   border-bottom: 0px;
   margin: 0;
   max-width: 500px;
@@ -41,7 +37,6 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 12px;
-
   padding-right: 12px;
   justify-items: center;
   justify-content: center;
@@ -50,7 +45,7 @@
   background-color: #dbc3a3;
 }
 .portfolio-header {
-  color: white; /*#dbc3a3;*/
+   /*#dbc3a3;*/
   text-align: center;
   margin-bottom: 20px;
 }
@@ -64,7 +59,7 @@
   display: none;
 }
 .portfolio-title {
-  font-family: Lora, "Source Serif Pro";
+  font-family: Lora;
   font-weight: normal;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -74,11 +69,12 @@
   text-align: center;
 }
 .portfolio-description {
-  font-family: "Source Serif Pro";
+  /*font-family: "Source Serif Pro";*/
   padding-right: 6%;
   padding-left: 6%;
   font-weight: normal;
   margin-top: 5px;
+  font-size: 16px;
   margin-bottom: 0;
   color: #333;
 }

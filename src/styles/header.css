@@ -11,12 +11,12 @@
 }
 .header-title a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #fff;
   display: inline;
   width: 200px;
 }
 .header-line {
-  border: 1px solid #bbb;
+  border: 1.4px solid rgba(255,255,255,0.3);
   margin-top: 12px;
   margin-left: 40px;
 }
@@ -50,15 +50,17 @@
   /*text-transform: uppercase;*/
   text-decoration: none;
   font-size: 22px;
-  color: #777;
+  color: #d9d9d9;
   margin-top: 0;
   font-weight: normal;
   line-height: 200%;
+  text-align: right;
+  display: inherit;
 }
 .header-line {
   display: none;
 }
 .active {
-  color: #222; /*#654a4e;*/
+  color: #fff; /*#654a4e;*/
   font-weight: bold;
 }
