@@ -1,9 +1,7 @@
-/*@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  src: url("../fonts/lora-bold-webfont.woff") format("woff");
-}*/
-
+$primary-color: #465475   ;
+$secondary-color:#fff;
+$text-color: #222;
+$inverted-text-color:white;
 html,
 body {
   font-family: "Merriweather", "Lora", serif;
@@ -15,7 +13,6 @@ body {
   line-height: 1.5;
   color:rgba(0,0,0,0.82);
 }
-
  /* letter-spacing: -0.02em; */
 p{
   line-height:160%;
@@ -33,13 +30,13 @@ h3 {
 }
 h1 {
   font-size: 70px;
-  font-weight: bold;
+  font-weight: 900;
   color: #333;
-  color: #445886;
+  color: $primary-color;
   padding-top: 30px;
 }
 .page-title {
-  margin-top:50px;
+  margin-top:30px;
   /*text-shadow: 5px 5px #a8bebf, -5px 5px #a8bebf, -5px -5px #a8bebf;*/
 }
 blockquote{
@@ -74,19 +71,23 @@ h2 {
   padding-left: 40px;
 }*/
 a {
-  text-decoration-color: whitesmoke;
+  text-decoration-color: $primary-color;
   /*text-decoration-style: dotted;*/
   text-decoration-skip-ink: auto;
   text-decoration-thickness: 0.1em;
   text-underline-offset: 2px;
-  color: black;
+  color: $text-color;
+}
+.centred{
+  margin:auto;
+  margin-top:25px;
 }
 ::selection {
   color: white;
-  background: #333; /* WebKit/Blink Browsers */
+  background: $primary-color; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #333; /* Gecko Browsers */
+  background: $primary-color; /* Gecko Browsers */
   color: white;
 }
 .content-div {
@@ -102,8 +103,11 @@ a {
 header {
   grid-column: 1 / 3;
   grid-row: 1;
-  background-color: #445886;
+  background-color: $primary-color;
   padding-right: 20px;
+  position:fixed;
+  height:100%;
+  max-width:180px;
 }
 main {
   grid-column: 1 / 3;
@@ -168,20 +172,23 @@ main {
     display: none;
   }
   .index-wrapper {
-    padding-top: 10vh;
+    padding-top: 2vh;
   }
   .writing-wrapper {
     padding-top: 7vh;
   }
 }
+.contact-wrapper{
+margin-top:12vh;
+}
 hr {
 
   margin: 0px;
-  border: 6px solid #445886;
+  border: 2px solid rgba(0,0,0,0.12);
   max-width: 350px;
   text-align: left;
   align: left;
-  margin-top: 5px;
+  margin-top: 25px;
   margin-left: 0px;
 }
 @media all and (max-width: 635px) {

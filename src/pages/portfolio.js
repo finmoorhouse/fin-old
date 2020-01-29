@@ -13,6 +13,7 @@ export default () => {
       <Layout path="portfolio-colour">
       <SEO title="Portfolio" />
         <h1 class="portfolio-header">Portfolio</h1>
+        <hr className='centred'/>
         <br />
         <div class="portfolio-gallery">
           {posts.map(post => {

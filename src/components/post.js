@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import "../styles/post.css"
+import "katex/dist/katex.min.css";
 
 export const query = graphql`
   query($slug: String!) {
