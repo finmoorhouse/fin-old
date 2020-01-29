@@ -1,3 +1,4 @@
+$primary-color:  #465475   ;
 .header-title {
   font-family: "Karla", "M+ 1M";
   /*text-transform: uppercase;*/
@@ -33,12 +34,12 @@
   padding-top: 20vh;
 }
 .menu-button a {
-  color: black;
+  color: white;;
   text-decoration: none;
 }
 .menu-button {
   text-align: center;
-  color: black;
+  color: white;
   font-family: "Karla";
   font-weight: normal;
   text-transform: uppercase;
@@ -50,7 +51,7 @@
   /*text-transform: uppercase;*/
   text-decoration: none;
   font-size: 22px;
-  color: #d9d9d9;
+ color:#ddd;
   margin-top: 0;
   font-weight: normal;
   line-height: 200%;
