@@ -4,7 +4,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
-import "../styles/post.css"
+import "../styles/post.scss"
 import "katex/dist/katex.min.css";
 
 export const query = graphql`

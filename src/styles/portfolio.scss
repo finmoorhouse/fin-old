@@ -1,3 +1,6 @@
+@import "variables";
+
+
 .portfolio-box {
   /*background-color: grey;*/
   width: 100%;
@@ -17,9 +20,9 @@
   width: 100%;
 }
 .portfolio-line {
-  background-color: #eee;
-  border-color: #dddddd;
-  border-top: 2px solid #dddddd; /*#dbc3a3;*/
+  background-color: $text-color;
+  border-color: $text-color;
+  border-top: 2px solid $text-color; /*#dbc3a3;*/
   border-bottom: 0px;
   margin: 0;
   max-width: 500px;
@@ -65,7 +68,7 @@
   margin-bottom: 10px;
   font-size: 30px;
   margin-bottom: 0;
-  color: black;
+  color: $text-color;
   text-align: center;
 }
 .portfolio-description {
@@ -76,7 +79,8 @@
   margin-top: 5px;
   font-size: 16px;
   margin-bottom: 0;
-  color: #333;
+  color: $text-color;
+  opacity:0.7;
 }
 .gatsby-resp-image-image {
   max-width: 100% !important;

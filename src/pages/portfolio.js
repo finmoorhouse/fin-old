@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import usePortfolio from "../hooks/use-portfolio"
 import PortfolioPreview from "../components/portfolio-preview"
-import "../styles/portfolio.css"
+import "../styles/portfolio.scss"
 
 import SEO from "../components/seo"
 

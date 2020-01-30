@@ -1,13 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../styles/writing.css"
+import "../styles/writing.scss"
 const PostPreview = ({ post }) => (
   <div>
     <h3 class="post-title">
       <Link to={post.path}>{post.title}</Link>
     </h3>
     <hr class="post-line" />
-    {/*<h4 class="date-published">{post.type} published on 29th September</h4>*/}
+    <hr/>
+    <h4 class="date-published">{post.date}</h4>
     <p class="excerpt">{post.excerpt}</p>
   </div>
 )
