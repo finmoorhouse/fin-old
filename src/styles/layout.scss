@@ -118,7 +118,19 @@ main {
   padding-right: 40px;
   max-width: 800px;
 }
-
+.menu-button {
+  display: none;
+}
+.menu-wrapper {
+  position: relative;
+  z-index: 1;
+  height: 160px;
+  display: none;
+  width: 180px;
+  background: none;
+  display: block;
+  padding-top: 0;
+}
 @media all and (min-width: 635px) {
   header {
     grid-column: 1;
@@ -130,7 +142,6 @@ main {
   }
   .header-title {
     display: block;
-
     /*margin-top: calc(-215px);
     writing-mode: vertical-lr;
     text-orientation: mixed;
@@ -150,24 +161,13 @@ main {
   header {
     padding-top: calc(50vh - 160px);
   }
-  .menu-wrapper {
-    position: relative;
-    z-index: 1;
-    height: 160px;
-    display: none;
-    width: 180px;
-    background: none;
-    display: block;
-    padding-top: 0;
-  }
+ 
   .centre {
     text-align: center;
     margin: auto;
     margin-bottom: 30px;
   }
-  .menu-button {
-    display: none;
-  }
+
   .index-wrapper {
     padding-top: 2vh;
   }
@@ -189,37 +189,6 @@ hr {
   margin-top: 25px;
   margin-left: 0px;
 }
-@media all and (max-width: 635px) {
-  .header-title {
-    display: none;
-  }
-  h1 {
-    text-align: center;
-    margin-bottom:18px;
-    margin-top:0px;
-    padding-top:0px;
-  }
-  hr {
-    margin: auto;
-   
-    text-align: center;
-  }
-  .sidebar-menu-item a{
-    text-align: center;
-    color: $primary-bg;
-  }
-  .portfolio-header{
-    margin-top:20px;
-  }
-  header{
-    max-width: 635px;
-    position: relative;
-  }
-
-}
-.big p {
-  font-size: 25px;
-}
 .big {
   font-size: 25px;
 }
@@ -233,8 +202,75 @@ ul {
 h3 {
   font-size: 30px;
   font-weight: bold;
-  font-family: "Karla";
+  line-height:95%
 }
+@media all and (max-width: 635px) {
+ /* .header-title {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom:18px;
+    margin-top:0px;
+    padding-top:0px;
+  }
+  hr {
+    margin: auto;
+    text-align: center;
+  }
+  .sidebar-menu-item a{
+    text-align: center;
+    color: $primary-bg;
+  }
+  .portfolio-header{
+    margin-top:20px;
+  }*/
+  .sidebar-menu-item{
+display:inline;
+margin-left:17px;
+
+
+  }
+  .header-title{
+    padding-top:15px;
+    opacity: 0.4;
+    margin-left: 17px;
+  }
+  .sidebar-menu-item a{
+    font-size: 4.2vw;
+   
+  }
+  header{
+    max-width: 635px;
+    position: relative;
+    background-color: $secondary-color;
+  }
+  .page-wrapper{
+    padding-left:17px;
+    padding-right:17px;
+  
+  }
+  .contact-wrapper, .skills, .index-wrapper, .writing-wrapper, .portfolio-colour, .page-wrapper{
+    margin-top:0;
+    padding-top:40px;
+  }
+  hr{
+    border: 1px solid $text-color;
+  }
+ h1, .page-title{
+   font-size:13vw;
+padding-top:0;
+margin-top: 0;
+ }
+ html,body{
+   font-size:17px;
+ }
+ .big{
+   font-size:20px;
+ }
+}
+
+
 /*
 .index-colour{
   background-color: #a8bebf;
