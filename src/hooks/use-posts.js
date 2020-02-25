@@ -4,7 +4,7 @@ const usePosts = () => {
   const data = useStaticQuery(graphql`
     query {
       allMdx (
-        sort: { order: ASC, fields: [frontmatter___date] }
+        sort: { order: ASC  , fields: [frontmatter___date] }
         filter: { frontmatter: { type:{eq:"post"}} }
         ){
         nodes {
