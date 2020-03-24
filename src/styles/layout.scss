@@ -13,9 +13,11 @@ body {
   scrollbar-color: #bbb $primary-bg;
 }
  /* letter-spacing: -0.02em; */
-p{
-  line-height:160%;
+ .post{
+p,ul{
+  line-height:1.9;
 }
+ }
 h1,
 h2,
 h3 {
@@ -34,6 +36,8 @@ h1 {
 }
 .page-title {
   margin-top:30px;
+  line-height: 1;
+  font-size:76px;
   /*text-shadow: 5px 5px #a8bebf, -5px 5px #a8bebf, -5px -5px #a8bebf;*/
 }
 blockquote{

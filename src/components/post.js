@@ -35,7 +35,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
   }
   return (
     <Layout>
-      <div class="page-wrapper">
+      <div class="page-wrapper post">
         <h1 class="page-title">{post.frontmatter.title}</h1>
 
         <hr />
