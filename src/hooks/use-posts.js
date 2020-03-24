@@ -4,7 +4,7 @@ const usePosts = () => {
   const data = useStaticQuery(graphql`
     query {
       allMdx (
-        sort: { order: ASC  , fields: [frontmatter___date] }
+        sort: { order: DESC  , fields: [frontmatter___date] }
         filter: { frontmatter: { type:{eq:"post"}} }
         ){
         nodes {
@@ -14,6 +14,9 @@ const usePosts = () => {
             slug
             path
             type
+            date(
+              formatString: "MMMM DD, YYYY"
+            )
             featuredImage {
               childImageSharp {
                 sizes(maxWidth:500){
@@ -34,6 +37,7 @@ const usePosts = () => {
     slug: post.frontmatter.slug,
     image: post.frontmatter.image,
     path: post.frontmatter.path,
+    date: post.frontmatter.date,
     excerpt: post.excerpt,
     type:post.frontmatter.type,
     featuredImage:post.frontmatter.featuredImage,

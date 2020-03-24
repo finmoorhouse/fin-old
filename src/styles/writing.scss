@@ -1,8 +1,8 @@
 @import "variables";
 
 .post-title {
-
-  font-size: 40px;
+  margin-bottom: 0;
+  font-size: 36px;
   font-weight: bold;
   text-shadow: 2px 2px $secondary-color, -2px 2px $secondary-color, -2px -2px $secondary-color;
 }
@@ -11,13 +11,19 @@
   text-decoration: none;
 }
 .date-published {
-  font-family: "Fira Code", "Space Mono";
+  font-family:  "Space Mono",Courier,monospace;
+  font-weight: normal;
+  opacity: 0.7;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .post-line {
   margin-left: 0;
-  max-width: 280px;
+  max-width: 200px;
   color: $text-color;
-  border: 0px solid $text-color;
+  border: 1px solid $text-color;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 .writing-hr {
   margin-bottom: 40px;
