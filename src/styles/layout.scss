@@ -10,6 +10,7 @@ body {
   text-align: left;
   line-height: 1.5;
   color:$text-color;
+  scrollbar-color: #bbb $primary-bg;
 }
  /* letter-spacing: -0.02em; */
 p{
@@ -278,7 +279,7 @@ margin-top: 0;
 ::-webkit-scrollbar-track {
   background: $primary-bg; 
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888; 
