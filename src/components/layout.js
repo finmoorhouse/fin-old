@@ -29,7 +29,7 @@ const Layout = ({ children, path  }) => {
       <div className="content-div">
         <Helmet>
           <link
-            href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora:700|Open+Sans:700,800|Merriweather&display=swap"
+            href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora:700|Open+Sans:700,800|Space+Mono|Merriweather&display=swap"
             rel="stylesheet"
           />
         </Helmet>
