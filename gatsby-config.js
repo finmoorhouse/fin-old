@@ -3,6 +3,10 @@ module.exports = {
     title: `Fin Moorhouse`,
     description: `The portfolio and blog of Fin Moorhouse.`,
     author: `Fin Moorhouse`,
+    url: `https://www.finmoorhouse.com`,
+    twitterUsername: `@finmoorhouse`,
+    
+
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
