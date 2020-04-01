@@ -11,7 +11,7 @@ export default () => {
   return (
     <>
       <Layout path="portfolio-colour">
-      <SEO title="Portfolio" />
+      <SEO title="🎨 Portfolio" />
         <h1 class="portfolio-header">Portfolio</h1>
         <hr className='centred'/>
         <br />
