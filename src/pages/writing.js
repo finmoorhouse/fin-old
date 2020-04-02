@@ -9,7 +9,7 @@ export default () => {
   return (
     <>
       <Layout path="writing-colour">
-      <SEO title="✒️ Writing" />
+      <SEO title="✒️ Writing" pageThumb = "/meta-writing.jpg"/>
         <div class="page-wrapper writing-wrapper">
           <h1 class="page-title writing-title">Writing</h1>
           {/*<hr class="writing-hr" />*/}

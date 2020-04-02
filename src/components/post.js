@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Img from "gatsby-image"
 import "../styles/post.scss"
 import "katex/dist/katex.min.css";
+import SEO from "../components/seo"
 
 export const query = graphql`
   query($slug: String!) {
@@ -35,6 +36,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
   }
   return (
     <Layout>
+      <SEO myFeaturedImage={post.frontmatter.featuredImage} />
       <div class="page-wrapper post">
         <h1 class="page-title">{post.frontmatter.title}</h1>
 

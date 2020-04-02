@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout path="index-colour">
    
-    <SEO title="🧍 About Me" />
+    <SEO title="👋 About Me" pageThumb = "/meta-about.jpg"/>
     <div class="page-wrapper index-wrapper big">
       <h1 class="page-title">About me</h1>
       <hr />
