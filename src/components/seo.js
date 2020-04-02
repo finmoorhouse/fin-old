@@ -19,6 +19,9 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            url
+            twitterUsername
+            image
           }
         }
       }
@@ -66,6 +69,14 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `theme-color`,
+          content: `#333948`,
+        },
+        {
+          name:`image`,
+          content: site.siteMetadata.image,
         },
       ].concat(meta)}
     />

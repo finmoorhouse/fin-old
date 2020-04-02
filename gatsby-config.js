@@ -5,7 +5,7 @@ module.exports = {
     author: `Fin Moorhouse`,
     url: `https://www.finmoorhouse.com`,
     twitterUsername: `@finmoorhouse`,
-    
+    image: "/meta-image.jpg"
 
   },
   plugins: [
