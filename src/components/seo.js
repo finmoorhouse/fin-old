@@ -62,6 +62,10 @@ function SEO({ description, lang, meta, title, pageThumb, myFeaturedImage }) {
           content: `summary_large_image`,
         },
         {
+          name: `twitter:site`,
+          content: `@finmoorhouse`,
+        },
+        {
           name: `twitter:creator`,
           content: site.siteMetadata.author,
         },
