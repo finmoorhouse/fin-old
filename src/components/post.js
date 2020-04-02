@@ -36,7 +36,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
   }
   return (
     <Layout>
-      <SEO myFeaturedImage={post.frontmatter.featuredImage} />
+      <SEO title={post.frontmatter.title}  myFeaturedImage={post.frontmatter.featuredImage} />
       <div class="page-wrapper post">
         <h1 class="page-title">{post.frontmatter.title}</h1>
 
