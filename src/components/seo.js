@@ -70,6 +70,10 @@ function SEO({ description, lang, meta, title, pageThumb, myFeaturedImage }) {
           content: site.siteMetadata.author,
         },
         {
+          name: `author`,
+          content: site.siteMetadata.author,
+        },
+        {
           name: `twitter:title`,
           content: myTitle,
         },
