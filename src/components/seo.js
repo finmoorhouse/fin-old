@@ -86,7 +86,7 @@ function SEO({ description, lang, meta, title, pageThumb, myFeaturedImage }) {
           content: pageThumbnail,
         },
         {
-          name : `og:image`,
+          property : `og:image`,
           content: pageThumbnail,
         },
         {
