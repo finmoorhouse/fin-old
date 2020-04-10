@@ -6,7 +6,7 @@ body {
   /*background-color: coral;*/
   margin: 0;
   padding: 0;
-  font-size: 19px;
+  font-size: 20px;
   text-align: left;
   line-height: 1.5;
   color:$text-color;
@@ -15,6 +15,7 @@ body {
  /* letter-spacing: -0.02em; */
  .post{
 p,ul,ol{
+  font-size: 19px;
   line-height:1.9;
 }
  }
