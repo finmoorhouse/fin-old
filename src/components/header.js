@@ -1,9 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { Component } from "react"
+import React from "react"
 import "../styles/header.scss"
 import MenuItem from "./menu-item"
-import MenuButton from "./menu-button"
 const Header = ({ siteTitle }) => (
   <header>
     <h1 className="header-title">
@@ -17,7 +16,6 @@ const Header = ({ siteTitle }) => (
       <MenuItem whereTo={"/writing"} name={"writing"} />
       <MenuItem whereTo={"/contact"} name={"contact"} />
     </div>
-    <MenuButton />
   </header>
 )
 

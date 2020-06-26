@@ -26,10 +26,11 @@ h3 {
   margin-bottom: 0;
   font-variant-ligatures: common-ligatures;
   font-variant-ligatures: discretionary-ligatures;
-  line-height: 80%;
   font-family: "Open Sans","Karla";
+  line-height: 96%;
 }
 h1 {
+  line-height: 82%;
   font-size: 70px;
   font-weight: 900;
   color: $header-color;

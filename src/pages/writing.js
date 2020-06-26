@@ -14,7 +14,7 @@ export default () => {
           <h1 class="page-title writing-title">Writing</h1>
           {/*<hr class="writing-hr" />*/}
           <br/>
-          <h4></h4>
+          <br/>
           {posts.map(post => {
             return <PostPreview key={post.slug} post={post} />
           })}
