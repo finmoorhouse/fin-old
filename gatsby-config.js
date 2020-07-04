@@ -104,7 +104,7 @@ module.exports = {
             `,
             output: "writing/rss.xml",
             title: "Fin Moorhouse — Writing.",
-            description: "Fin Moorhouses' blog.",
+            description: "Fin Moorhouse's blog.",
             match: "^/writing/",
           },
         ],
