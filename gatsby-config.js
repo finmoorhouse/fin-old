@@ -44,54 +44,68 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
-      resolve: "gatsby-plugin-feed-generator",
+      resolve: `gatsby-plugin-feed-mdx`,
       options: {
-        generator: `GatsbyJS`,
-        rss: true, // Set to true to enable rss generation
-        json: true, // Set to true to enable json feed generation
-        siteQuery: `
-        {
-          site {
-            siteMetadata {
-              title
-              description
-              siteUrl
-              author
-            }
-          }
-        }
-      `,
-        feeds: [
+        query: `
           {
-            name: "writing",
-            query: `
-          {
-            allMdx(
-              sort: {order: DESC, fields: [frontmatter___date]},
-              ) {
-              edges {
-                node {
-                  html
-                  frontmatter {
-                    date
-                    path
-                    title
-                  }
-                }
+            site {
+              siteMetadata {
+                title
+                author
+                siteUrl
+                site_url: siteUrl
               }
             }
           }
-          `,
-            normalize: ({ query: { site, allMdx } }) => {
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
               return allMdx.edges.map(edge => {
-                return {
-                  title: edge.node.frontmatter.title,
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
-                  html: edge.node.html,
-                }
+                  url:
+                    site.siteMetadata.siteUrl +
+                    "/writing/" +
+                    edge.node.frontmatter.path,
+                  guid:
+                    site.siteMetadata.siteUrl +
+                    "/writing/" +
+                    edge.node.frontmatter.path,
+                  //custom_elements: [{ "content:encoded": edge.node.html }],
+                })
               })
             },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { 
+                    frontmatter: {
+                      type:{eq:"post"},
+                      subtype:{eq:"ea"},
+                    }
+                  },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      frontmatter {
+                        title
+                        slug
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Fin Moorhouse — Writing.",
+            description: "Fin Moorhouses' blog.",
+            match: "^/writing/",
           },
         ],
       },
