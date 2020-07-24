@@ -37,6 +37,7 @@ module.exports = {
               strict: `ignore`,
             },
           },
+          `gatsby-remark-copy-linked-files`,
         ],
       },
     },

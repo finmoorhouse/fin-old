@@ -42,24 +42,7 @@ h1 {
   font-size:76px;
   /*text-shadow: 5px 5px #a8bebf, -5px 5px #a8bebf, -5px -5px #a8bebf;*/
 }
-blockquote{
-  
-  /*border-left:2px solid #555;*/
-  padding-left: 20px;
-  font-style: italic;
-  box-sizing: border-box;
-  opacity:0.8;
-}
-blockquote::before{
-  content:'\201C';
-  font-size:3em;
-line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-blockquote p{
-  display: inline;
-}
+
 h2 {
   font-size: 40px;
 }
