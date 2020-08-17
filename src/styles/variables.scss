@@ -3,3 +3,18 @@ $secondary-color:#333948;
 $text-color: #ddd;
 $inverted-text-color:#ddd;
 $header-color:#ddd;
+
+
+$primary-bg-light: #ffffff;
+$secondary-bg-light: #d8dae0;
+
+$themes: (
+        dark: (
+            primary: $primary-bg
+
+        ),
+        light: (
+
+                primary: $primary-bg-light
+        ),
+);
