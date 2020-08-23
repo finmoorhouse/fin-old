@@ -1,13 +1,3 @@
----
-title: Saving the Web with Very Small Amounts of Money
-slug: micropayments
-author: Fin Moorhouse
-path: /writing/micropayments
-type: post
-subtype: misc
-date: 2020-08-23
-featuredImage: './micropayments.jpg'
----
 # Saving the Web with Very Small Amounts of Money
 
 In the past half-decade, something about our relationship with content on the web has quietly turned sour. It took more than one form: ads have inflated and spilled out over the pages they accompany, often bleeding with the author’s word. Who can reliably tell an honest review from subtly sponsored content? Journalism on the web – trusted as the ultimate open and democratic forum – has monopolised and polarised. What’s more, few people agree on exactly what is wrong – and among those who do, few have articulated a way out. A while ago I stumbled on the idea of ‘micropayments’. Micropayments offer a diagnosis: that a great deal of trouble has been caused by the way online content is (or isn’t) funded by its consumers. They also offer a solution: a new model for funding content.
