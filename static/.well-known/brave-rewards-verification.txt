@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: finmoorhouse.com
+Token: 68d27e88c8cee2b1166853fc87364b8075ac4aaad8e3ed2d234b7f654337b2da
