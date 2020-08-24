@@ -11,6 +11,8 @@ body {
   line-height: 1.5;
   color: $text-color;
   scrollbar-color: #bbb $primary-bg;
+  max-width: 100%;
+  overflow-x:hidden;
 }
 
 
