@@ -1,2 +1,28 @@
 @import "variables";
 
+.dark-mode-toggle{
+    border:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+    right:15px;
+    background: none;
+    width:40px;
+    height:40px;
+}
+#moon{
+    height:10px;
+    width:10px;
+    fill: lighten($secondary-color, 10%);
+}
+.light{
+    #moon{
+        fill: darken($secondary-color--light, 20%);
+    }
+}
+@media all and (max-width:500px){
+    .dark-mode-toggle{
+        position: relative;
+        margin-left: 20px;
+    }
+}

@@ -1,20 +1,16 @@
-$primary-bg: #2a2f3c;/*#465475 */
-$secondary-color:#333948;
+/* Dark Theme */
+
+$primary-bg: #2a2f3c; /*#465475 */
+$secondary-color: #333948;
 $text-color: #ddd;
-$inverted-text-color:#ddd;
-$header-color:#ddd;
+$inverted-text-color: #ddd;
+$header-color: #ddd;
 
 
-$primary-bg-light: #ffffff;
-$secondary-bg-light: #d8dae0;
+/* Light Theme*/
 
-$themes: (
-        dark: (
-            primary: $primary-bg
-
-        ),
-        light: (
-
-                primary: $primary-bg-light
-        ),
-);
+$primary-bg--light: #eeeeee;
+$secondary-color--light: #ffffff;
+$text-color--light: rgb(46, 46, 46);
+$inverted-text-color--light: #ddd;
+$header-color--light: rgb(59, 59, 59);

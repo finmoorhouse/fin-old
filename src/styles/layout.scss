@@ -9,16 +9,23 @@ body {
   font-size: 20px;
   text-align: left;
   line-height: 1.5;
-  color:$text-color;
+  color: $text-color;
   scrollbar-color: #bbb $primary-bg;
 }
- /* letter-spacing: -0.02em; */
- .post{
-p,ul,ol{
-  font-size: 19px;
-  line-height:1.9;
+
+
+
+
+
+/* letter-spacing: -0.02em; */
+.post {
+  p,
+  ul,
+  ol {
+    font-size: 19px;
+    line-height: 1.9;
+  }
 }
- }
 h1,
 h2,
 h3 {
@@ -26,7 +33,7 @@ h3 {
   margin-bottom: 0;
   font-variant-ligatures: common-ligatures;
   font-variant-ligatures: discretionary-ligatures;
-  font-family: "Open Sans","Karla";
+  font-family: "Open Sans", "Karla";
   line-height: 100%;
 }
 h1 {
@@ -37,9 +44,9 @@ h1 {
   padding-top: 30px;
 }
 .page-title {
-  margin-top:30px;
+  margin-top: 30px;
   line-height: 1;
-  font-size:76px;
+  font-size: 76px;
   /*text-shadow: 5px 5px #a8bebf, -5px 5px #a8bebf, -5px -5px #a8bebf;*/
 }
 
@@ -49,10 +56,9 @@ h2 {
 .skills h2 {
   margin-bottom: 30px;
   font-family: lora;
-
 }
-.skills{
-  padding-top:20px;
+.skills {
+  padding-top: 20px;
 }
 /*.skills h3 {
   padding-left: 40px;
@@ -65,9 +71,9 @@ a {
   text-underline-offset: 2px;
   color: $text-color;
 }
-.centred{
-  margin:auto;
-  margin-top:25px;
+.centred {
+  margin: auto;
+  margin-top: 25px;
 }
 ::selection {
   color: $secondary-color;
@@ -92,9 +98,9 @@ header {
   grid-row: 1;
   background-color: $primary-bg;
   padding-right: 20px;
-  position:fixed;
-  height:100%;
-  max-width:180px;
+  position: fixed;
+  height: 100%;
+  max-width: 180px;
 }
 main {
   grid-column: 1 / 3;
@@ -151,7 +157,7 @@ main {
   header {
     padding-top: calc(50vh - 160px);
   }
- 
+
   .centre {
     text-align: center;
     margin: auto;
@@ -165,14 +171,13 @@ main {
     padding-top: 7vh;
   }
 }
-.contact-wrapper{
-margin-top:12vh;
+.contact-wrapper {
+  margin-top: 12vh;
 }
 hr {
-
   margin: 0px;
   border: 2px solid $text-color;
-  opacity:0.42;
+  opacity: 0.42;
   max-width: 350px;
   text-align: left;
   align: left;
@@ -192,10 +197,10 @@ ul {
 h3 {
   font-size: 30px;
   font-weight: bold;
-  line-height:95%
+  line-height: 95%;
 }
 @media all and (max-width: 635px) {
- /* .header-title {
+  /* .header-title {
     display: none;
   }
   h1 {
@@ -215,56 +220,69 @@ h3 {
   .portfolio-header{
     margin-top:20px;
   }*/
-  .sidebar-menu-item{
-display:inline;
-margin-left:17px;
-
-
+  .sidebar-menu-item {
+    display: inline;
+    margin-left: 17px;
   }
-  .header-title{
-    padding-top:15px;
+  .header-title {
+    padding-top: 15px;
     opacity: 0.4;
     margin-left: 17px;
   }
-  .sidebar-menu-item a{
+  .sidebar-menu-item a {
     font-size: 4.2vw;
-   
   }
-  header{
+  header {
     max-width: 635px;
     position: relative;
     background-color: $secondary-color;
   }
-  .page-wrapper{
-    padding-left:17px;
-    padding-right:17px;
-  
+
+  .page-wrapper {
+    padding-left: 17px;
+    padding-right: 17px;
   }
-  .contact-wrapper, .skills, .index-wrapper, .writing-wrapper, .portfolio-colour, .page-wrapper{
-    margin-top:0;
-    padding-top:40px;
+  .contact-wrapper,
+  .skills,
+  .index-wrapper,
+  .writing-wrapper,
+  .portfolio-colour,
+  .page-wrapper {
+    margin-top: 0;
+    padding-top: 40px;
   }
-  hr{
+  hr {
     border: 1px solid $text-color;
   }
- h1, .page-title{
-   font-size:13vw;
-padding-top:0;
-margin-top: 0;
- }
- html,body{
-   font-size:17px;
- }
- ul{
-   font-size:17px;
- }
- blockquote{
-margin-left:0px; 
+  h1,
+  .page-title {
+    font-size: 13vw;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  html,
+  body {
+    font-size: 17px;
+  }
+  ul {
+    font-size: 17px;
+  }
+  blockquote {
+    margin-left: 0px;
+  }
+  .big {
+    font-size: 20px;
+  }
+  .light {
+    hr {
+      border: 1px solid $text-color;
+    }
+    header {
+      background-color: $secondary-color;
+    }
+  }
 }
- .big{
-   font-size:20px;
- }
-}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
@@ -272,17 +290,17 @@ margin-left:0px;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: $primary-bg; 
+  background: $primary-bg;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 /*
@@ -296,3 +314,44 @@ margin-left:0px;
   background-color: #fff;
 }*/
 /*I can also just load special css for each page to do this...*/
+
+
+/* Defining Themes */
+.dark {
+// Things are dark by default!
+}
+
+
+.light {
+
+
+  color: $text-color--light !important;
+  //scrollbar-color: #bbb $primary-bg--light;
+
+h1 {
+  color: $header-color--light;
+}
+a {
+  color: $text-color--light;
+  text-decoration-color: $text-color--light;
+}
+::selection {
+  color: $secondary-color--light;
+  background: $text-color--light; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  color: $secondary-color--light;
+  background: $text-color--light;
+}
+header {
+  background-color: $secondary-color--light;
+}
+main {
+  background-color: $secondary-color--light; /* #e6ddde; */
+}
+hr {
+  border-color: $text-color--light;
+}
+}
+
+

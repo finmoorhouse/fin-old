@@ -13,7 +13,7 @@ import 'normalize.css'
 import "../styles/layout.scss"
 import { Helmet } from "react-helmet"
 
-const Layout = ({ children, path  }) => {
+const Layout = ({ children, path, theme}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,7 +26,7 @@ const Layout = ({ children, path  }) => {
 
   return (
     <>
-      <div className="content-div">
+      <div className={"content-div "+ (theme ? "light" : "dark")}>
         <Helmet>
           <link
             href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora:700|Open+Sans:700,800|Space+Mono|Merriweather&display=swap"
