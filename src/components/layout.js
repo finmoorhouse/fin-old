@@ -9,11 +9,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import 'normalize.css'
+import "normalize.css"
 import "../styles/layout.scss"
 import { Helmet } from "react-helmet"
 
-const Layout = ({ children, path, theme}) => {
+const Layout = ({ children, path, theme }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,13 +26,21 @@ const Layout = ({ children, path, theme}) => {
 
   return (
     <>
-      <div className={"content-div "+ (theme ? "light" : "dark")}>
+      <div className={"content-div " + (theme ? "light" : "dark")}>
         <Helmet>
           <link
             href="https://fonts.googleapis.com/css?family=Karla:400,700|Lora:700|Open+Sans:700,800|Space+Mono|Merriweather&display=swap"
             rel="stylesheet"
           />
           <link href="https://github.com/finmoorhouse" rel="me" />
+          <link
+            rel="webmention"
+            href="https://webmention.io/www.finmoorhouse.com/webmention"
+          />
+          <link
+            rel="pingback"
+            href="https://webmention.io/www.finmoorhouse.com/xmlrpc"
+          />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main className={path}>
@@ -48,8 +56,7 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 Layout.defaultProps = {
-  path: "unknown"
+  path: "unknown",
 }
-
 
 export default Layout
