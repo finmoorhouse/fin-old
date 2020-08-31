@@ -1,14 +1,9 @@
 @import "variables";
 
 .header-title {
-  font-family: "Karla", "M+ 1M";
-  /*text-transform: uppercase;*/
-  /*font-weight: bolder;*/
-
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   font-size: 30px;
-  /*background-color: aquamarine;*/
-  /*height: 430px;*/
   margin-left: 20px;
 }
 .header-title a {
@@ -18,21 +13,16 @@
   width: 200px;
 }
 .header-line {
-  border: 1.4px solid $text-color;
   margin-top: 12px;
   margin-left: 40px;
-  opacity:0.3;
+  opacity: 0.3;
+  height: 2px;
 }
 .menu-wrapper {
-  width: 100vw;
-  height: 100vh;
   position: fixed;
-  display: none;
   left: 0;
   top: 0;
   z-index: 2;
-  text-align: center;
-  background: white;
   padding-top: 20vh;
 }
 .menu-button a {
@@ -42,19 +32,19 @@
 .menu-button {
   text-align: center;
   color: $text-color;
-  font-family: "Karla";
+  font-family: "Merriweather", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   margin-top: 22px;
   font-size: 20px;
 }
 .sidebar-menu-item * {
-  font-family: "Karla", Courier, monospace;
-  /*text-transform: uppercase;*/
+  font-family: "Open Sans", Courier, monospace;
   text-decoration: none;
-  font-size: 22px;
- color: $text-color;
- opacity:0.9;
+  font-size: 20px;
+  text-transform: none;
+  color: $text-color;
+  opacity: 0.9;
   margin-top: 0;
   font-weight: normal;
   line-height: 200%;
@@ -67,7 +57,4 @@
 .active {
   color: #fff; /*#654a4e;*/
   font-weight: bold;
-}
-#opener{
-  max-height: 50px;
 }

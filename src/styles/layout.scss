@@ -3,7 +3,6 @@
 html,
 body {
   font-family: "Merriweather", "Lora", serif;
-  /*background-color: coral;*/
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -12,14 +11,8 @@ body {
   color: $text-color;
   scrollbar-color: #bbb $primary-bg;
   max-width: 100%;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
-
-
-
-
-
-/* letter-spacing: -0.02em; */
 .post {
   p,
   ul,
@@ -62,9 +55,7 @@ h2 {
 .skills {
   padding-top: 20px;
 }
-/*.skills h3 {
-  padding-left: 40px;
-}*/
+
 a {
   text-decoration-color: $text-color;
   /*text-decoration-style: dotted;*/
@@ -79,7 +70,7 @@ a {
 }
 ::selection {
   color: $secondary-color;
-  background: $text-color; /* WebKit/Blink Browsers */
+  background: $text-color;
 }
 ::-moz-selection {
   color: $secondary-color;
@@ -92,7 +83,7 @@ a {
   display: grid;
   grid-gap: 0px;
   grid-template-columns: minmax(0, 200px) minmax(0, 2fr);
-  grid-template-rows: 60px 1fr;
+  /*grid-template-rows: 60px 1fr;*/
 }
 
 header {
@@ -122,14 +113,16 @@ main {
 .menu-wrapper {
   position: relative;
   z-index: 1;
-  height: 160px;
-  display: none;
-  width: 180px;
-  background: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding-top: 0;
 }
 @media all and (min-width: 635px) {
+  .menu-wrapper {
+    height: 160px;
+    width: 180px;
+
+  }
   header {
     grid-column: 1;
     grid-row: 1 / 3;
@@ -140,10 +133,6 @@ main {
   }
   .header-title {
     display: block;
-    /*margin-top: calc(-215px);
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    transform: rotate(-180deg);*/
     font-weight: bold;
     font-size: 27px;
     text-align: right;
@@ -178,7 +167,10 @@ main {
 }
 hr {
   margin: 0px;
-  border: 2px solid $text-color;
+  /*border: 2px solid $text-color;*/
+  height: 4px;
+  border: none;
+  background: $text-color;
   opacity: 0.42;
   max-width: 350px;
   text-align: left;
@@ -202,42 +194,42 @@ h3 {
   line-height: 95%;
 }
 @media all and (max-width: 635px) {
-  /* .header-title {
-    display: none;
-  }
-  h1 {
+  .menu-wrapper{
+    display: block;
+    width:100vw;
+    overflow-wrap: normal;
     text-align: center;
-    margin-bottom:18px;
-    margin-top:0px;
-    padding-top:0px;
+    padding:0 6px;
+    box-sizing: border-box;
   }
-  hr {
-    margin: auto;
-    text-align: center;
-  }
-  .sidebar-menu-item a{
-    text-align: center;
-    color: $primary-bg;
-  }
-  .portfolio-header{
-    margin-top:20px;
-  }*/
-  .sidebar-menu-item {
-    display: inline;
-    margin-left: 17px;
+
+  .sidebar-menu-item * {
+    line-height: 100%;
   }
   .header-title {
     padding-top: 15px;
     opacity: 0.4;
     margin-left: 17px;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom:5px;
+  }
+  .sidebar-menu-item{
+    display: inline;
+    padding: 0 1.5vw;
+  }
+  .sidebar-menu-item::before{
+    content: " ";
   }
   .sidebar-menu-item a {
-    font-size: 4.2vw;
+    display: inline;
+    /*font-size: 4.2vw;*/
   }
   header {
     max-width: 635px;
     position: relative;
-    background-color: $secondary-color;
+    background-color: $primary-bg;
+    padding-bottom: 5px;
   }
 
   .page-wrapper {
@@ -251,10 +243,10 @@ h3 {
   .portfolio-colour,
   .page-wrapper {
     margin-top: 0;
-    padding-top: 40px;
+    padding-top: 20px;
   }
   hr {
-    border: 1px solid $text-color;
+    height: 3px;
   }
   h1,
   .page-title {
@@ -276,9 +268,6 @@ h3 {
     font-size: 20px;
   }
   .light {
-    hr {
-      border: 1px solid $text-color;
-    }
     header {
       background-color: $secondary-color;
     }
@@ -305,55 +294,33 @@ h3 {
   background: #555;
 }
 
-/*
-.index-colour{
-  background-color: #a8bebf;
-}
-.portfolio-colour{
-  background-color: #a8bebf;
-}
-.writing-colour{
-  background-color: #fff;
-}*/
-/*I can also just load special css for each page to do this...*/
-
-
 /* Defining Themes */
-.dark {
-// Things are dark by default!
-}
-
 
 .light {
-
-
   color: $text-color--light !important;
   //scrollbar-color: #bbb $primary-bg--light;
-
-h1 {
-  color: $header-color--light;
+  h1 {
+    color: $header-color--light;
+  }
+  a {
+    color: $text-color--light;
+    text-decoration-color: $text-color--light;
+  }
+  ::selection {
+    color: $secondary-color--light;
+    background: $text-color--light; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    color: $secondary-color--light;
+    background: $text-color--light;
+  }
+  header {
+    background-color: $secondary-color--light;
+  }
+  main {
+    background-color: $secondary-color--light; /* #e6ddde; */
+  }
+  hr {
+    border-color: $text-color--light;
+  }
 }
-a {
-  color: $text-color--light;
-  text-decoration-color: $text-color--light;
-}
-::selection {
-  color: $secondary-color--light;
-  background: $text-color--light; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  color: $secondary-color--light;
-  background: $text-color--light;
-}
-header {
-  background-color: $secondary-color--light;
-}
-main {
-  background-color: $secondary-color--light; /* #e6ddde; */
-}
-hr {
-  border-color: $text-color--light;
-}
-}
-
-

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family==Lora:700&display=swap');
 @import "variables";
 
 
@@ -21,9 +22,8 @@
 }
 .portfolio-line {
   background-color: $text-color;
-  border-color: $text-color;
-  border-top: 2px solid $text-color; /*#dbc3a3;*/
-  border-bottom: 0px;
+  border:none;
+  height:2px;
   margin: 0;
   max-width: 500px;
   margin-left: 30%;
@@ -63,7 +63,7 @@
 }
 .portfolio-title {
   font-family: Lora;
-  font-weight: normal;
+  font-weight: 700;
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 30px;
