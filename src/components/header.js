@@ -13,6 +13,7 @@ const Header = ({ siteTitle }) => (
       <MenuItem whereTo={"/"} name={"about"} />
       <MenuItem whereTo={"/skills"} name={"skills"} />
       <MenuItem whereTo={"/portfolio"} name={"portfolio"} />
+      <br id="header-breaker"/>
       <MenuItem whereTo={"/writing"} name={"writing"} />
       <MenuItem whereTo={"/contact"} name={"contact"} />
     </div>

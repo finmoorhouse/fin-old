@@ -121,7 +121,6 @@ main {
   .menu-wrapper {
     height: 160px;
     width: 180px;
-
   }
   header {
     grid-column: 1;
@@ -194,12 +193,12 @@ h3 {
   line-height: 95%;
 }
 @media all and (max-width: 635px) {
-  .menu-wrapper{
+  .menu-wrapper {
     display: block;
-    width:100vw;
+    width: 100vw;
     overflow-wrap: normal;
     text-align: center;
-    padding:0 6px;
+    padding: 0 6px;
     box-sizing: border-box;
   }
 
@@ -212,13 +211,13 @@ h3 {
     margin-left: 17px;
     text-align: center;
     font-weight: 700;
-    padding-bottom:5px;
+    padding-bottom: 5px;
   }
-  .sidebar-menu-item{
+  .sidebar-menu-item {
     display: inline;
     padding: 0 1.5vw;
   }
-  .sidebar-menu-item::before{
+  .sidebar-menu-item::before {
     content: " ";
   }
   .sidebar-menu-item a {

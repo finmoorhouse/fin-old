@@ -58,3 +58,16 @@
   color: #fff; /*#654a4e;*/
   font-weight: bold;
 }
+#header-breaker {
+  display: none;
+}
+@media all and (max-width: 450px) {
+  #header-breaker {
+    display: inline;
+  }
+}
+@media all and (max-width: 300px){
+  #header-breaker {
+    display: none;
+  }
+}
