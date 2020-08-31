@@ -12,7 +12,7 @@ const IndexPage = () => (
       <a class="p-name u-url u-uid hidden" href="https://finmoorhouse.com/">
         Fin Moorhouse
       </a>
-      <img class="u-photo hidden" src="https://www.finmoorhouse.com/fin-moorhouse-indieweb-picture.jpg" />
+      {/*<img class="u-photo hidden" src="https://www.finmoorhouse.com/fin-moorhouse-indieweb-picture.jpg" />*/}
       <h1 class="page-title">About me</h1>
       <hr />
       <p>
