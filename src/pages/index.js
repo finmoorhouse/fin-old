@@ -8,19 +8,16 @@ const IndexPage = () => (
   <Layout path="index-colour">
     <SEO title="👋 About Me" pageThumb="/meta-about.jpg" />
 
-
-
-
-
     <div class="page-wrapper index-wrapper big h-card">
-    <a class="p-name u-url hidden" href="https://finmoorhouse.com/">
+      <a class="p-name u-url u-uid hidden" href="https://finmoorhouse.com/">
         Fin Moorhouse
       </a>
+      <img class="u-photo hidden" src="https://www.finmoorhouse.com/fin-moorhouse-indieweb-picture.jpg" />
       <h1 class="page-title">About me</h1>
       <hr />
       <p>
-        I'm a <span class='p-job-title'>student</span> based between Bath and Cambridge. I code, make films, and
-        design things.
+        I'm a <span class="p-job-title">student</span> based between Bath and
+        Cambridge. I code, make films, and design things.
       </p>
       <p>
         I have experience with short films, event coverage, motion graphics,
