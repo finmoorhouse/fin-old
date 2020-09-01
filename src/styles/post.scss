@@ -20,7 +20,7 @@
         fill: darken($secondary-color--light, 20%);
     }
 }
-@media all and (max-width:500px){
+@media all and (max-width:$mobile-breakpoint){
     .dark-mode-toggle{
         position: relative;
         margin-left: 20px;

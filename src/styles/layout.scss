@@ -81,7 +81,7 @@ a {
   grid-template-columns: minmax(0, 200px) minmax(0, 2fr);
   /*grid-template-rows: 60px 1fr;*/
 }
-.hidden{
+.hidden {
   display: none;
 }
 header {
@@ -115,7 +115,7 @@ main {
   flex-direction: column;
   padding-top: 0;
 }
-@media all and (min-width: 635px) {
+@media all and (min-width: $mobile-breakpoint) {
   .menu-wrapper {
     height: 160px;
     width: 180px;
@@ -190,7 +190,7 @@ h3 {
   font-weight: bold;
   line-height: 95%;
 }
-@media all and (max-width: 635px) {
+@media all and (max-width: $mobile-breakpoint) {
   .menu-wrapper {
     display: block;
     width: 100vw;
@@ -208,8 +208,9 @@ h3 {
     opacity: 0.4;
     margin-left: 17px;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     padding-bottom: 5px;
+    line-height: 70%;
   }
   .sidebar-menu-item {
     display: inline;
@@ -223,7 +224,7 @@ h3 {
     /*font-size: 4.2vw;*/
   }
   header {
-    max-width: 635px;
+    max-width: $mobile-breakpoint;
     position: relative;
     background-color: $primary-bg;
     padding-bottom: 5px;
@@ -244,12 +245,20 @@ h3 {
   }
   hr {
     height: 3px;
+    max-width: calc(min(70vw,300px));
+  opacity: 0.2;
+  margin-top: 15px;
+margin-left:auto;
+margin-right:auto;
   }
   h1,
   .page-title {
-    font-size: 13vw;
+    font-size: calc(9vw + 12px);
     padding-top: 0;
     margin-top: 0;
+  }
+  .page-title{
+    text-align: center;
   }
   html,
   body {
