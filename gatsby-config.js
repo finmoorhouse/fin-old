@@ -104,9 +104,55 @@ module.exports = {
             `,
             output: "writing/rss.xml",
             title: "Fin Moorhouse — Writing.",
-            description: "Fin Moorhouse's blog.",
+            description: "Fin Moorhouse's writing about effective altruism.",
             match: "^/writing/",
           },
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url:
+                    site.siteMetadata.siteUrl +
+                    edge.node.frontmatter.path,
+                  guid:
+                    site.siteMetadata.siteUrl +
+                    edge.node.frontmatter.path,
+                  //custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { 
+                    frontmatter: {
+                      type:{eq:"post"},
+                    }
+                  },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      frontmatter {
+                        title
+                        slug
+                        date
+                        path
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "writing/blog-rss.xml",
+            title: "Fin Moorhouse — Writing.",
+            description: "Fin Moorhouse's blog.",
+            match: "^/writing/",
+          }
         ],
       },
     },
