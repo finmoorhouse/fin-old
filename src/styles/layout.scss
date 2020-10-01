@@ -303,6 +303,25 @@ margin-right:auto;
 /* Defining Themes */
 
 .light {
+  /* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primary-bg--light;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f00;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f00;
+}
   color: $text-color--light !important;
   //scrollbar-color: #bbb $primary-bg--light;
   h1 {
