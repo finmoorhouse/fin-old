@@ -329,4 +329,7 @@ margin-right:auto;
   hr {
     border-color: $text-color--light;
   }
+  .aside {
+    background: darken($secondary-color--light, 4%);
+  }
 }
