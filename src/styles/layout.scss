@@ -303,7 +303,12 @@ margin-right:auto;
 /* Defining Themes */
 
 .light {
-  
+  table tr {
+    background-color: darken($secondary-color--light, 2%);
+  }
+  table tr th {
+    background-color: darken($secondary-color--light, 6%);
+  }
   color: $text-color--light !important;
   //scrollbar-color: #bbb $primary-bg--light;
   h1 {
