@@ -16,17 +16,19 @@ const IndexPage = () => (
       <h1 class="page-title">About me</h1>
       <hr />
       <p>
-        I'm a <span class="p-job-title">student</span> based between Bath and
-        Cambridge. I code, make films, and design things.
+        I recently graduated in philosophy from Cambridge. Now I'm figuring out what to do with my life. In the meantime: I code, write, make films, and do research.
       </p>
       <p>
-        I have experience with short films, event coverage, motion graphics,
-        branding, and web design. I'm currently working on a{" "}
-        <Link to="/portfolio/packhorse">documentary</Link> and interning with{" "}
+        I have experience with filmmaking, event coverage, motion graphics, and web design. I'm currently working on a{" "}
+        <Link to="/portfolio/packhorse">documentary</Link>, I just finished interning with{" "}
         <a href="https://www.charityentrepreneurship.com/" target="_none">
           these folks
-        </a>
-        . Read my CV{" "}
+        </a>, and now I help  <a href="https://en.wikipedia.org/wiki/Liv_Boeree" target="_none">
+          Liv Boeree
+        </a> make videos like <a href="https://www.charityentrepreneurship.com/" target="_none">
+          this
+        </a>.
+         Read my CV{" "}
         <a
           href="https://www.finmoorhouse.com/Fin-Moorhouse-CV.pdf"
           target="_none"
@@ -49,8 +51,7 @@ const IndexPage = () => (
         <a href="https://www.effectivealtruism.org/" target="blank">
           effective altruism
         </a>{" "}
-        and related ideas like longtermism and existential risk. I'm hoping to
-        write about this kind of thing on my <Link to="/writing">writing</Link>{" "}
+        and related ideas like longtermism and existential risk. I write about this kind of thing on my <Link to="/writing">writing</Link>{" "}
         page and elsewhere.
       </p>
       <p>
