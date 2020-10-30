@@ -191,5 +191,14 @@ module.exports = {
         respectDNT: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // replace `UA-XXXXXXXXX-X` with your own Google Analytics Tracking ID
+        trackingId: `G-49DJR9BK46`,
+        head:true,
+        anonymize: true,
+      },
+    },
   ],
 }
