@@ -59,7 +59,7 @@ const IndexPage = () => (
         <a href="http://www.goodreads.com/finm" target="blank">
           read
         </a>{" "}
-        in my free time.
+        and play chess badly in my free time.
       </p>
     </div>
   </Layout>
