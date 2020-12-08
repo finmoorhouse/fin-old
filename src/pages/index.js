@@ -25,7 +25,7 @@ const IndexPage = () => (
           these folks
         </a>, and now I help  <a href="https://en.wikipedia.org/wiki/Liv_Boeree" target="_none">
           Liv Boeree
-        </a> make videos like <a href="https://www.charityentrepreneurship.com/" target="_none">
+        </a> make videos like <a href="https://youtu.be/kM7J56OxA6w" target="_none">
           this
         </a>.
          Read my CV{" "}
