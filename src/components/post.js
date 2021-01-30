@@ -43,7 +43,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
         title={post.frontmatter.title}
         myFeaturedImage={post.frontmatter.featuredImage}
       />
-      <div className="page-wrapper post h-entry">
+      <div className={"page-wrapper post h-entry " + (post.frontmatter.type==="post" && "post-wrapper")}>
         <button className="dark-mode-toggle" onClick={() => setDark(!dark)}>
           <svg viewBox="0 0 600 600">
             <path
