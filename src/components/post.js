@@ -58,7 +58,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
         <h1 className="page-title">{post.frontmatter.title}</h1>
   <a rel='Author' className='p-author h-card hidden' href="https://www.finmoorhouse.com">{post.frontmatter.author}</a>
   <a class="u-url hidden" href={`https://www.finmoorhouse.com${post.frontmatter.path}`}>…</a>
-        <hr />
+  {!post?.tableOfContents?.items && <hr />}
         {post?.tableOfContents?.items && (
         <TableOfContents items={post.tableOfContents.items} />
       )}
