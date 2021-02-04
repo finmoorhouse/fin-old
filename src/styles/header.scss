@@ -8,7 +8,7 @@
 }
 .header-title a {
   text-decoration: none;
-  color: #fff;
+  color: var(--primary-text);
   display: inline;
   width: 200px;
 }
@@ -26,12 +26,12 @@
   padding-top: 20vh;
 }
 .menu-button a {
-  color: $text-color;
+  color: var(--primary-text);
   text-decoration: none;
 }
 .menu-button {
   text-align: center;
-  color: $text-color;
+  color: var(--primary-text);
   font-family: "Merriweather", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
@@ -43,7 +43,7 @@
   text-decoration: none;
   font-size: 20px;
   text-transform: none;
-  color: $text-color;
+  color: var(--primary-text);
   opacity: 0.9;
   margin-top: 0;
   font-weight: normal;
@@ -55,7 +55,7 @@
   display: none;
 }
 .active {
-  color: #fff; /*#654a4e;*/
+  color: var(--primary-text); /*#654a4e;*/
   font-weight: bold;
 }
 #header-breaker {

@@ -21,7 +21,7 @@
   width: 100%;
 }
 .portfolio-line {
-  background-color: $text-color;
+  background-color: var(--primary-text);
   border:none;
   height:2px;
   margin: 0;
@@ -68,7 +68,7 @@
   margin-bottom: 10px;
   font-size: 30px;
   margin-bottom: 0;
-  color: $text-color;
+  color: var(--primary-text);
   text-align: center;
 }
 .portfolio-description {
@@ -79,7 +79,7 @@
   margin-top: 5px;
   font-size: 16px;
   margin-bottom: 0;
-  color: $text-color;
+  color: var(--primary-text);
   opacity:0.7;
 }
 .gatsby-resp-image-image {

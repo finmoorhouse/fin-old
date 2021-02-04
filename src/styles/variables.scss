@@ -17,3 +17,28 @@ $header-color--light: rgb(59, 59, 59);
 
 /* Other */
 $mobile-breakpoint: 635px;
+
+/* Light Mode */
+:root {
+
+    --primary-bg: #2a2f3c;
+    --off-bg: #f9f9fa;
+    --primary-text: #dddddd;
+    --secondary-bg: #333948;
+    --tertiary-bg: #2a2f3c;
+    --quaternary-bg: #999;
+    --transparent-text: rgba(0, 0, 0, 0.12);
+    --moon: #e2e2e2;
+}
+/* Dark Mode */
+:root.dark{
+    --primary-bg: #eee;
+    --off-bg: #eee;
+    --primary-text: #3b3b3b;
+    --secondary-bg: #fff;
+    --tertiary-bg: #3f3f3f;
+    --quaternary-bg: rgb(185, 185, 185);
+    --transparent-text: rgba(255, 255, 255, 0.12);
+    --moon: #333948;
+}
+

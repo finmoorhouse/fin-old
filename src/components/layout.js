@@ -12,6 +12,8 @@ import Header from "./header"
 import "normalize.css"
 import "../styles/layout.scss"
 import { Helmet } from "react-helmet"
+import DarkModeToggle from "./dark-mode-toggle"
+
 
 const Layout = ({ children, path, theme }) => {
   const data = useStaticQuery(graphql`
@@ -44,6 +46,8 @@ const Layout = ({ children, path, theme }) => {
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main className={path}>
+      <DarkModeToggle />
+
           {children}
           <footer></footer>
         </main>

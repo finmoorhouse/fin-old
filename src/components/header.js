@@ -3,6 +3,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import "../styles/header.scss"
 import MenuItem from "./menu-item"
+
+
+
 const Header = ({ siteTitle }) => (
   <header>
     <h1 className="header-title">
@@ -16,6 +19,7 @@ const Header = ({ siteTitle }) => (
       <br id="header-breaker"/>
       <MenuItem whereTo={"/writing"} name={"writing"} />
       <MenuItem whereTo={"/contact"} name={"contact"} />
+
     </div>
   </header>
 )
