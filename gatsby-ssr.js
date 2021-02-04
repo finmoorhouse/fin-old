@@ -39,7 +39,7 @@ exports.onRenderBody = ({ setHeadComponents }) => {
         listener();
       });
     });
-    setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+    setTheme(preferredTheme || (darkQuery.matches ? 'light' : 'light'));
   })();
   `
       }}
