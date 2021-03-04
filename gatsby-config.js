@@ -186,21 +186,21 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-44315602-2",
-        //Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        // exclude: [
-        //  "/portfolio/**",
-        //],
-        //  Setting this parameter is optional
-        anonymize: true,
-        //Setting this parameter is also optional
-        respectDNT: true,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "UA-44315602-2",
+    //     //Defines where to place the tracking script - `true` in the head and `false` in the body
+    //     head: true,
+    //     // exclude: [
+    //     //  "/portfolio/**",
+    //     //],
+    //     //  Setting this parameter is optional
+    //     anonymize: true,
+    //     //Setting this parameter is also optional
+    //     respectDNT: true,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
@@ -208,6 +208,16 @@ module.exports = {
         trackingId: `G-49DJR9BK46`,
         head:true,
         anonymize: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-goatcounter`,
+      options: {
+        // Either `code` or `selfHostUrl` is required.
+        // REQUIRED IF USING HOSTED GOATCOUNTER! https://[my_code].goatcounter.com
+        code: "finmoorhouse",
+        head: false,
+        pixel: true,
       },
     },
   ],
