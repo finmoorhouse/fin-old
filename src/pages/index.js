@@ -16,10 +16,17 @@ const IndexPage = () => (
       <h1 class="page-title">About me</h1>
       <hr />
       <p>
-        I recently graduated in philosophy from Cambridge. Now I'm figuring out what to do with my life. In the meantime: I code, write, make films, and do research.
+        I recently graduated in philosophy from Cambridge, and now I'm assistant to <a href="https://en.wikipedia.org/wiki/Toby_Ord" target="_none">Toby Ord</a>, and an incoming research scholar, at Oxford University's <a href="https://www.fhi.ox.ac.uk/" target="_none">Future of Humanity Institute</a>. I sometimes <a href="https://github.com/finmoorhouse" target="_none">code</a>, <Link to="/writing">write</Link> things, and make films.
       </p>
       <p>
-        I have experience with filmmaking, event coverage, motion graphics, and web design. I'm currently working on a{" "}
+        I co-host a podcast called <a href="https://www.hearthisidea.com" target="_none">
+          Hear This Idea
+        </a>, which showcases new
+        thinking from academics and innovators in philosophy and the social
+        sciences.
+      </p>
+      <p>
+        Also: I'm currently working on a{" "}
         <Link to="/portfolio/packhorse">documentary</Link>, I just finished interning with{" "}
         <a href="https://www.charityentrepreneurship.com/" target="_none">
           these folks
@@ -34,15 +41,6 @@ const IndexPage = () => (
           target="_none"
         >
           here
-        </a>
-        .
-      </p>
-      <p>
-        I co-host a podcast called <i>Hear This Idea</i> which showcases new
-        thinking from academics and innovators in philosophy and the social
-        sciences. You can find it at{" "}
-        <a href="https://www.hearthisidea.com" target="_none">
-          hearthisidea.com
         </a>
         .
       </p>
