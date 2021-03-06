@@ -58,6 +58,7 @@
   color: var(--primary-text); /*#654a4e;*/
   font-weight: bold;
 }
+
 #header-breaker {
   display: none;
 }
@@ -70,4 +71,12 @@
   #header-breaker {
     display: none;
   }
+}
+@media all and (min-width: $mobile-breakpoint){
+  .active::before{
+    content: "→ ";
+  }
+  // .active{
+  //   font-weight: normal;
+  // }
 }
