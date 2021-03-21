@@ -28,7 +28,7 @@ h3 {
   margin-bottom: 0;
   font-variant-ligatures: common-ligatures;
   font-variant-ligatures: discretionary-ligatures;
-  font-family: "Open Sans", "Karla";
+  font-family: "Chivo", "Open Sans", "Karla";
   line-height: 100%;
 }
 h1 {
@@ -135,7 +135,7 @@ main {
   }
   .header-title {
     display: block;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 27px;
     text-align: right;
     padding-top: 0;
@@ -170,13 +170,12 @@ main {
 hr {
   margin: 0px;
   /*border: 2px solid var(--primary-text);*/
-  height: 4px;
+  height: 3px;
   border: none;
   background: var(--primary-text);
-  opacity: 0.42;
+  opacity: 0.16;
   max-width: 350px;
   text-align: left;
-  align: left;
   margin-top: 25px;
   margin-left: 0px;
 }
@@ -231,7 +230,7 @@ h3 {
   header {
     max-width: $mobile-breakpoint;
     position: relative;
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-bg);
     padding-bottom: 5px;
   }
 

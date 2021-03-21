@@ -1,7 +1,7 @@
 @import "variables";
 
 .header-title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Chivo","Open Sans", sans-serif;
   text-decoration: none;
   font-size: 30px;
   margin-left: 20px;
@@ -39,7 +39,7 @@
   font-size: 20px;
 }
 .sidebar-menu-item * {
-  font-family: "Open Sans", Courier, monospace;
+  font-family: "Chivo", "Open Sans", Courier, monospace;
   text-decoration: none;
   font-size: 20px;
   text-transform: none;
@@ -75,6 +75,7 @@
 @media all and (min-width: $mobile-breakpoint){
   .active::before{
     content: "→ ";
+    font-size: 25px;
   }
   // .active{
   //   font-weight: normal;

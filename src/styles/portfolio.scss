@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 @import "variables";
 
 
@@ -28,7 +28,8 @@
   max-width: 500px;
   margin-left: 30%;
   margin-right: 30%;
-  margin-top: 8px;
+  margin-top: 12px;
+  margin-bottom: 8px;
 }
 .portfolio-gallery {
   display: grid;
@@ -53,7 +54,7 @@
   margin-bottom: 20px;
 }
 .subtype {
-  font-family: "Space Mono";
+  font-family: "IBM Plex Mono";
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
@@ -62,7 +63,7 @@
   display: none;
 }
 .portfolio-title {
-  font-family: Lora;
+  font-family: "Chivo","Merriweather","Lora";
   font-weight: 700;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -75,7 +76,7 @@
   /*font-family: "Source Serif Pro";*/
   padding-right: 6%;
   padding-left: 6%;
-  font-weight: normal;
+  font-weight: 200;
   margin-top: 5px;
   font-size: 16px;
   margin-bottom: 0;

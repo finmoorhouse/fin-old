@@ -31,7 +31,7 @@ const Layout = ({ children, path, theme }) => {
       <div className={"content-div " + (theme ? "light" : "dark")}>
         <Helmet>
           <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Space+Mono|Merriweather&display=swap"
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|IBM+Plex+Mono:300|Chivo:400,700,800|Space+Mono|Merriweather:300,400&display=swap"
             rel="stylesheet"
           />
           <link href="https://github.com/finmoorhouse" rel="me" />
