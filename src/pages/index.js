@@ -42,7 +42,7 @@ const IndexPage = () => (
         >
           here
         </a>
-        .
+        , and read more about what I can do <Link to="/skills">here</Link>.
       </p>
       <p>
         Lastly, I'm interested in{" "}

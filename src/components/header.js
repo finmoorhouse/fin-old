@@ -14,10 +14,10 @@ const Header = ({ siteTitle }) => (
     <hr className="header-line" />
     <div className="menu-wrapper" id="opener">
       <MenuItem whereTo={"/"} name={"about"} />
-      <MenuItem whereTo={"/skills"} name={"skills"} />
-      <MenuItem whereTo={"/portfolio"} name={"portfolio"} />
-      <br id="header-breaker"/>
+      {/*<MenuItem whereTo={"/skills"} name={"skills"} />*/}
       <MenuItem whereTo={"/writing"} name={"writing"} />
+      <br id="header-breaker"/>
+      <MenuItem whereTo={"/portfolio"} name={"portfolio"} />
       <MenuItem whereTo={"/contact"} name={"contact"} />
 
     </div>

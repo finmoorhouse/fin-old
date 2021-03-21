@@ -43,6 +43,8 @@ const Layout = ({ children, path, theme }) => {
             rel="pingback"
             href="https://webmention.io/www.finmoorhouse.com/xmlrpc"
           />
+          {/* Delete below if not using */}
+          {/*  <link rel="stylesheet" href="https://use.typekit.net/nnv1akw.css"></link>  */}
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main className={path}>
