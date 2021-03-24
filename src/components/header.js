@@ -7,7 +7,7 @@ import MenuItem from "./menu-item"
 
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <nav>
     <h1 className="header-title">
       <Link to="/">{siteTitle}</Link>
     </h1>
@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
       <MenuItem whereTo={"/contact"} name={"contact"} />
 
     </div>
-  </header>
+  </nav>
 )
 
 Header.propTypes = {
