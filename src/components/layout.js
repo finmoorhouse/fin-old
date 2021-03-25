@@ -46,8 +46,8 @@ const Layout = ({ children, path, theme }) => {
           {/* Delete below if not using */}
           {/*  <link rel="stylesheet" href="https://use.typekit.net/nnv1akw.css"></link>  */}
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
         <main className={path}>
+        <Header siteTitle={data.site.siteMetadata.title} />
       <DarkModeToggle />
 
           {children}
