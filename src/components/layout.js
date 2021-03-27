@@ -14,7 +14,6 @@ import "../styles/layout.scss"
 import { Helmet } from "react-helmet"
 import DarkModeToggle from "./dark-mode-toggle"
 
-
 const Layout = ({ children, path, theme }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -31,7 +30,7 @@ const Layout = ({ children, path, theme }) => {
       <div className={"content-div " + (theme ? "light" : "dark")}>
         <Helmet>
           <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|IBM+Plex+Mono:300|Chivo:400,700,800|Space+Mono|Merriweather:300,400&display=swap"
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300|Chivo:400,700|Merriweather:300&display=swap"
             rel="stylesheet"
           />
           <link href="https://github.com/finmoorhouse" rel="me" />
@@ -46,13 +45,13 @@ const Layout = ({ children, path, theme }) => {
           {/* Delete below if not using */}
           {/*  <link rel="stylesheet" href="https://use.typekit.net/nnv1akw.css"></link>  */}
         </Helmet>
-        <main className={path}>
-        <Header siteTitle={data.site.siteMetadata.title} />
-      <DarkModeToggle />
-
-          {children}
-          <footer></footer>
-        </main>
+        <div className='nav-content-wrapper'>
+          <Header siteTitle={data.site.siteMetadata.title} />
+            <DarkModeToggle />
+          <main className={path}>
+            {children}
+          </main>
+        </div>
       </div>
     </>
   )

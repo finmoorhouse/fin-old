@@ -12,8 +12,8 @@ export default () => {
     <>
       <Layout path="portfolio-colour">
       <SEO title="🎨 Portfolio" pageThumb = "/meta-portfolio.jpg" />
-        <h1 class="portfolio-header">Portfolio</h1>
-        <hr className='centred'/>
+        <h1 className='page-title'>Portfolio</h1>
+        <hr/>
         <br />
         <div class="portfolio-gallery">
           {posts.map(post => {

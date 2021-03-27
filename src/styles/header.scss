@@ -3,8 +3,8 @@
 .header-title {
   font-family: "Chivo","Open Sans", sans-serif;
   text-decoration: none;
-  font-size: 30px;
   margin-left: 20px;
+  margin-bottom: 18px;
 }
 .header-title a {
   text-decoration: none;
@@ -12,11 +12,12 @@
   display: inline;
   width: 200px;
 }
+
 .header-line {
   margin-top: 12px;
   margin-left: 40px;
-  opacity: 0.3;
-  height: 2px;
+  opacity: 0.2;
+  height: 1.4px;
 }
 .menu-wrapper {
   position: fixed;
@@ -41,7 +42,7 @@
 .sidebar-menu-item * {
   font-family: "Chivo", "Open Sans", Courier, monospace;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: none;
   color: var(--primary-text);
   opacity: 0.9;
@@ -51,12 +52,10 @@
   text-align: right;
   display: inherit;
 }
-.header-line {
-  display: none;
-}
+
 .active {
   color: var(--primary-text); /*#654a4e;*/
-  font-weight: bold;
+  //font-weight: bold;
 }
 
 #header-breaker {
@@ -76,8 +75,35 @@
   .active::before{
     content: "→ ";
     font-size: 25px;
+    line-height: 0;
   }
-  // .active{
-  //   font-weight: normal;
-  // }
+}
+.hamburger{
+  display: none;
+  float: right;
+  padding-right: 16px;
+  padding-top: 5px;
+}
+.header-title input {
+  cursor: pointer;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  right: 12px;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+}
+.header-title input ~ .menu-wrapper {
+  background: hotpink;
+}
+.hamburger span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
 }
