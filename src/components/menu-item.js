@@ -7,7 +7,7 @@ function MenuItem(props) {
     isRoot = false
   }
   return (
-    <h3 class="sidebar-menu-item">
+    <h3 className="sidebar-menu-item">
       <Link
         activeClassName="active"
         partiallyActive={isRoot}

@@ -197,10 +197,9 @@ blockquote::before {
 blockquote p {
   display: inline;
 }
-.post-preview{
+.post-preview {
   border-bottom: 1px solid var(--transparent-text);
   margin-bottom: 28px;
-
 }
 @media all and (max-width: $mobile-breakpoint) {
   blockquote::before {
@@ -209,14 +208,19 @@ blockquote p {
     margin-left: 0px;
   }
   .post-title {
-    font-size: calc(4vw + 18px);
+    font-size: calc(3vw + 12px);
   }
   .post-line {
     margin-left: 0;
   }
   .post {
-    p {
-      font-size: calc(1.1vw + 11px);
+    p,
+    ul,
+    ol, li {
+      font-size: calc(1.1vw + 12px);
     }
+  }
+  .aside {
+    font-size: calc(1.1vw + 12px);
   }
 }

@@ -17,7 +17,6 @@ body {
   p,
   ul,
   ol {
-    font-size: 17px;
     line-height: 1.9;
   }
 }
@@ -101,7 +100,7 @@ nav {
 main {
   flex-basis: 0;
   flex-grow: 1;
-  padding: 0 unquote("min(50px, 6vw)");
+  padding: 0 unquote("min(50px, 4vw)");
   padding-top: 60px;
 }
 .page-wrapper {
@@ -141,40 +140,61 @@ hr {
 .big {
   font-size: var(--big-text-size); //20px
 }
-ul {
-  font-size: 20px;
-}
+
 h3 {
   font-size: 30px;
   font-weight: 400;
   line-height: 95%;
 }
+.back-button{
+  font-family: 'Chivo', sans-serif;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 38px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 8px;
+}
 @media all and (max-width: $mobile-breakpoint) {
+  .menu-wrapper {
+    flex-direction: row;
+    background: var(--primary-bg);
+    justify-content: space-around;
+    padding: 6px 0 4px 0;
+  }
   .header-title {
+    margin: 0;
     padding-top: 15px;
     text-align: center;
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    padding-left: 5px;
   }
-  .dark-mode-toggle{
-	  display: none;
+  .dark-mode-toggle {
+    display: none;
   }
-  .header-title a{
-	display: block;
-	max-width: 150px;
+  .header-title a {
+    display: block;
   }
   nav {
     position: relative;
-	width: 100vw;
-	padding: 0;
+    width: 100vw;
+    padding: 0;
   }
-  .hamburger{
-	  display:block
+  .hamburger {
+    display: block;
+  }
+  main {
+  padding-top: 30px;
+
   }
   hr {
     height: 2px;
-    max-width: calc(min(70vw, 300px));
-    opacity: 0.2;
+    max-width: 150px;
+    opacity: 0.8;
     margin-top: 15px;
   }
   h1,
@@ -199,15 +219,30 @@ h3 {
   #nav-wrapper {
     height: 100%;
   }
-  .sidebar-menu-item *{
-    font-family: "IBM Plex Mono";
-	text-align: left;
+  .sidebar-menu-item * {
+    //font-family: "IBM Plex Mono";
+    
+    text-align: left;
+    text-decoration-skip: edges;
+  }
+  .active{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
   }
 }
 .spacer {
   display: block;
   height: 28px;
 }
+@media all and (max-width: $mobile-breakpoint){
+  .hidden{
+    display: none;
+  }
+  .visible{
+    display: flex;
+  }
+  }
 ::-webkit-scrollbar {
   width: 15px;
 }

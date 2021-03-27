@@ -56,7 +56,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
         <TableOfContents items={post.tableOfContents.items} />
       )}
         <MDXRenderer>{post.body}</MDXRenderer>
-        <Link className="big" to={backTo}>
+        <Link className="big back-button" to={backTo}>
           {"⟵ back to " + backTo.slice(1)}
         </Link>
         <br />
