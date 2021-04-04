@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import React, { useState } from "react"
 import "../styles/header.scss"
 import MenuItem from "./menu-item"
+import DarkModeToggle from "./dark-mode-toggle"
+
 
 const Header = ({ siteTitle }) => {
   const [menu, setMenu] = useState("hidden")
@@ -12,6 +14,7 @@ const Header = ({ siteTitle }) => {
         <div className="header-title">
           <Link to="/">{siteTitle}</Link>
           {/*<input type="checkbox" />*/}
+          <DarkModeToggle />
           <div className={'hamburger ' + ((menu === 'visible') ? 'checked' : 'unchecked')} onClick={() => setMenu((menu==='visible') ? 'hidden' : 'visible')}>
             <span></span>
             <span></span>

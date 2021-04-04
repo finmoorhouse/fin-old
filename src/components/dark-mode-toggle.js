@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from "react"
 import "../styles/dark-mode-toggle.scss"
+import Moon from "../assets/moon.svg";
 
 const DarkModeToggle = () => {
   let myTheme = null
@@ -25,10 +26,13 @@ const DarkModeToggle = () => {
         amIChecked={checked}
         onClick={onChange}
       >
+        <Moon className={"circle"} />
+        {/*
         <span className={"circle" + (checked ? " sun" : " moon")}></span>
         <span
           className={"sun-rays" + (checked ? " shining" : " hiding")}
         ></span>
+        */}
       </button>
     </>
   )
