@@ -1,78 +1,49 @@
 @import "variables.scss";
-$size: 100px;
+$size: 80px;
 
 .dark-mode-toggle {
   outline: none;
   transform: scale(0.4);
   background: none;
-  height: 80px;
-  border-radius: 50px;
+  height: 0;
   border: none;
   cursor: pointer;
-  padding-left: 15px;
-  margin-right: 20px;
-  right: 30px;
+  padding: 0;
+  right: 5px;
+  position: relative;
+}
+
+.mobile-moon,
+.desktop-moon {
+  display: none;
+}
+
+.desktop-moon {
   position: absolute;
+  top: 20px;
 }
 
 .circle {
-  top: -12px;
-  border-radius: 50%;
-  position: absolute;
-  height: $size;
   width: $size;
   display: block;
   background: none;
-  transition: all 400ms;
-  box-shadow: inset calc(100px * 0.33) calc(100px * -0.25) 0;
   color: var(--moon);
-  transition-delay: 0.3s;
-  &.sun {
-    transition-delay: 0s;
-    top: -10px;
-    color: var(--moon);
-    transform: scale(0.55);
-    box-shadow: inset calc(100px * 0.7) calc(100px * -0.7) 0 10px;
-  }
 }
-.sun-rays {
-  top: -10px;
-  transition: all 300ms;
-  transition-delay: 0s;
-  display: block;
-  position: absolute;
-  border-radius: 50%;
-  color: var(--moon);
-  width: $size;
-  height: $size;
+.mobile-moon > .circle {
+  width: 60px;
+}
 
-  --d: 44px;
-  --dn: calc(var(--d) * -1);
-  --r: calc(var(--d) * 1.41421);
-  --rn: calc(var(--r) * -1);
-  --ray-scale: -43px;
-  box-shadow: var(--dn) var(--dn) 0 var(--ray-scale),
-    var(--d) var(--dn) 0 var(--ray-scale), var(--dn) var(--d) 0 var(--ray-scale),
-    var(--d) var(--d) 0 var(--ray-scale), var(--r) 0px 0 var(--ray-scale),
-    0px var(--r) 0 var(--ray-scale), var(--rn) 0px 0 var(--ray-scale),
-    0px var(--rn) 0 var(--ray-scale);
-  &.hiding {
-    transform: scale(0.55);
-    opacity: 0;
-  }
-  &.shining {
-    transition-delay: 0.3s;
-    transform: scale(0.75);
+
+
+@media all and (min-width: $mobile-breakpoint) {
+  .desktop-moon {
+    display: block;
   }
 }
-@media all and (max-width: 900px) {
-  .dark-mode-toggle {
-  }
-}
-@media all and (max-width: 500px) {
-  .dark-mode-toggle {
-    transform: scale(0.3);
-    margin-right: 0px;
-    margin-top: -5px;
+@media all and (max-width: $mobile-breakpoint) {
+  .mobile-moon {
+    display: block;
+    align-self: stretch;
+    top:-3px;
   }
 }

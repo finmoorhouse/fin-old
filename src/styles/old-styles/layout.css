@@ -1,8 +1,4 @@
-/*@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  src: url("../fonts/lora-bold-webfont.woff") format("woff");
-}*/
+
 
 html,
 body {
@@ -15,7 +11,7 @@ p {
   font-size: 22px;
   text-align: left;
   line-height: 1.5;
- /* letter-spacing: -0.02em; */
+  /* letter-spacing: -0.02em; */
 }
 h1,
 h2,
@@ -36,24 +32,24 @@ h1 {
   padding-top: 30px;
 }
 .page-title {
-  margin-top:50px;
+  margin-top: 50px;
   /*text-shadow: 5px 5px #a8bebf, -5px 5px #a8bebf, -5px -5px #a8bebf;*/
 }
-blockquote{
-  color:#333;
+blockquote {
+  color: #333;
   /*border-left:2px solid #555;*/
   padding-left: 20px;
   font-style: italic;
   box-sizing: border-box;
 }
-blockquote::before{
-  content:'\201C';
-  font-size:3em;
-line-height: 0.1em;
+blockquote::before {
+  content: "\201C";
+  font-size: 3em;
+  line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
-blockquote p{
+blockquote p {
   display: inline;
 }
 h2 {
@@ -62,10 +58,9 @@ h2 {
 .skills h2 {
   margin-bottom: 30px;
   font-family: lora;
-
 }
-.skills{
-  padding-top:20px;
+.skills {
+  padding-top: 20px;
 }
 /*.skills h3 {
   padding-left: 40px;
@@ -208,22 +203,9 @@ hr {
 ul {
   font-size: 20px;
 }
-/*li {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}*/
+
 h3 {
   font-size: 30px;
   font-weight: bold;
   font-family: "Karla";
 }
-.index-colour{
-  background-color: #a8bebf;
-}
-.portfolio-colour{
-  background-color: #a8bebf;
-}
-.writing-colour{
-  background-color: #fff;
-}
-/*I can also just load special css for each page to do this...*/

@@ -15,7 +15,7 @@ export default () => {
         <h1 className='page-title'>Portfolio</h1>
         <hr/>
         <br />
-        <div class="portfolio-gallery">
+        <div className="portfolio-gallery">
           {posts.map(post => {
             return <PortfolioPreview key={post.slug} post={post} />
           })}

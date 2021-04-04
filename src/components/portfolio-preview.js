@@ -3,16 +3,16 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 const PortfolioPreview = ({ post }) => (
-  <div class="portfolio-box">
+  <div className="portfolio-box">
     <Link to={post.path}>
-      <div class="portfolio-image">
+      <div className="portfolio-image">
         <Img sizes={post.featuredImage.childImageSharp.sizes} />
       </div>
-      <h3 class="portfolio-title">{post.title}</h3>
+      <h3 className="portfolio-title">{post.title}</h3>
     </Link>
-    <h4 class="subtype">{post.subtype}</h4>
-    <hr class="portfolio-line" />
-    <h4 class="portfolio-description">{post.subtitle}</h4>
+    <h4 className="subtype">{post.subtype}</h4>
+    <hr className="portfolio-line" />
+    <h4 className="portfolio-description">{post.subtitle}</h4>
   </div>
 )
 

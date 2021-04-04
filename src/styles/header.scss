@@ -25,6 +25,10 @@
   top: 0;
   z-index: 2;
   padding-top: 20vh;
+  margin-top: 6px;
+}
+.moon-and-hamburger{
+  display: flex;
 }
 .menu-button a {
   color: var(--primary-text);
@@ -54,8 +58,7 @@
 }
 
 .active {
-  color: var(--primary-text); /*#654a4e;*/
-  //font-weight: bold;
+  color: var(--primary-text); 
 }
 
 #header-breaker {
@@ -80,25 +83,12 @@
 }
 .hamburger{
   display: none;
-  padding-right: 16px;
+  padding-right: 24px;
   cursor: pointer;
   position: relative;
-  top: 3px;
+  top: 0px;
 }
 
-
-// .header-title input {
-//   cursor: pointer;
-//   width: 40px;
-//   height: 32px;
-//   position: absolute;
-//   right: 12px;
-//   opacity: 0; /* hide this */
-//   z-index: 2; /* and place it over the hamburger */
-// }
-// .header-title input ~ .menu-wrapper {
-//   background: hotpink;
-// }
 .hamburger span{
   display: block;
   width: 26px;
@@ -108,10 +98,11 @@
   background: var(--primary-text);
   border-radius: 3px;
   z-index: 1;
-  transition: 0s;
   transform-origin: 0px 0px;
 }
-
+.checked {
+  top:5px;
+}
 .checked > span {
   transform: translate(2px, -13px) rotate(45deg) ;
 }

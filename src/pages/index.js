@@ -1,19 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout path="index-colour">
+  <Layout>
     <SEO title="👋 About Me" pageThumb="/meta-about.jpg" />
 
-    <div class="page-wrapper index-wrapper big h-card">
-      <a class="p-name u-url u-uid hidden" href="https://finmoorhouse.com/">
+    <div className="page-wrapper index-wrapper big h-card">
+      <a className="p-name u-url u-uid hidden" href="https://finmoorhouse.com/">
         Fin Moorhouse
       </a>
-      {/*<img class="u-photo hidden" src="https://www.finmoorhouse.com/fin-moorhouse-indieweb-picture.jpg" />*/}
-      <h1 class="page-title">About me</h1>
+      {/*<img className="u-photo hidden" src="https://www.finmoorhouse.com/fin-moorhouse-indieweb-picture.jpg" />*/}
+      <h1 className="page-title">About me</h1>
       <hr />
       <p>
         I recently graduated in philosophy from Cambridge, and now I'm assistant to <a href="https://en.wikipedia.org/wiki/Toby_Ord" target="_none">Toby Ord</a>, and an incoming research scholar, at Oxford University's <a href="https://www.fhi.ox.ac.uk/" target="_none">Future of Humanity Institute</a>. I sometimes <a href="https://github.com/finmoorhouse" target="_none">code</a>, <Link to="/writing">write</Link> things, and make films.

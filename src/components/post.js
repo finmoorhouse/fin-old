@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
@@ -31,17 +31,15 @@ export const query = graphql`
   }
 `
 
-const ThemeContext = React.createContext()
 
 const PostTemplate = function({ data: { mdx: post } }) {
   let backTo = "/writing"
   if (post.frontmatter.type === "portfolio") {
     backTo = "/portfolio"
   }
-  const [dark, setDark] = useState(false)
 
   return (
-    <Layout theme={dark}>
+    <Layout>
       <SEO
         title={post.frontmatter.title}
         myFeaturedImage={post.frontmatter.featuredImage}
@@ -50,7 +48,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
         
         <h1 className="page-title">{post.frontmatter.title}</h1>
   <a rel='Author' className='p-author h-card hidden' href="https://www.finmoorhouse.com">{post.frontmatter.author}</a>
-  <a class="u-url hidden" href={`https://www.finmoorhouse.com${post.frontmatter.path}`}>…</a>
+  <a className="u-url hidden" href={`https://www.finmoorhouse.com${post.frontmatter.path}`}>…</a>
   {(!post?.tableOfContents?.items || post.frontmatter.type==="portfolio") && <hr />}
         {(post?.tableOfContents?.items &&  post.frontmatter.type==="post") && (
         <TableOfContents items={post.tableOfContents.items} />

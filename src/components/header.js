@@ -5,7 +5,6 @@ import "../styles/header.scss"
 import MenuItem from "./menu-item"
 import DarkModeToggle from "./dark-mode-toggle"
 
-
 const Header = ({ siteTitle }) => {
   const [menu, setMenu] = useState("hidden")
   return (
@@ -13,16 +12,26 @@ const Header = ({ siteTitle }) => {
       <nav>
         <div className="header-title">
           <Link to="/">{siteTitle}</Link>
-          {/*<input type="checkbox" />*/}
-          <DarkModeToggle />
-          <div className={'hamburger ' + ((menu === 'visible') ? 'checked' : 'unchecked')} onClick={() => setMenu((menu==='visible') ? 'hidden' : 'visible')}>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div className="moon-and-hamburger">
+            <DarkModeToggle mobileMoon="false" />
+            <div
+              role="button"
+              tabIndex={0}
+              className={
+                "hamburger " + (menu === "visible" ? "checked" : "unchecked")
+              }
+              onClick={() => setMenu(menu === "visible" ? "hidden" : "visible")}
+              onKeyDown={() =>
+                setMenu(menu === "visible" ? "hidden" : "visible")
+              }
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
-        {/*<hr className="header-line" />*/}
-        <div className={'menu-wrapper ' + menu}>
+        <div className={"menu-wrapper " + menu} role="button" tabIndex={0}>
           <MenuItem whereTo={"/"} name={"About"} />
           <MenuItem whereTo={"/writing"} name={"Writing"} />
           <MenuItem whereTo={"/portfolio"} name={"Portfolio"} />

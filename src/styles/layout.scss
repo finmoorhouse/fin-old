@@ -73,7 +73,7 @@ a {
 }
 .nav-content-wrapper {
   margin: auto;
-  max-width: 1000px;
+  max-width: 1100px;
   overflow: auto;
   display: flex;
   justify-content: space-around;
@@ -172,9 +172,6 @@ h3 {
     justify-content: space-between;
     padding-bottom: 12px;
     padding-left: 5px;
-  }
-  .dark-mode-toggle {
-    display: none;
   }
   .header-title a {
     display: block;

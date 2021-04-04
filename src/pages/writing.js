@@ -10,8 +10,8 @@ export default () => {
     <>
       <Layout path="writing-colour">
       <SEO title="✒️ Writing" pageThumb = "/meta-writing.jpg"/>
-        <div class="page-wrapper writing-wrapper">
-          <h1 class="page-title writing-title">Writing</h1>
+        <div className="page-wrapper writing-wrapper">
+          <h1 className="page-title writing-title">Writing</h1>
           <hr/>
           <span className='spacer'/>
           {posts.map(post => {
