@@ -1,0 +1,31 @@
+---
+label: Portfolio Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: slug
+  label: slug
+- type: text
+  name: author
+  label: author
+- type: text
+  name: path
+  label: path
+- type: text
+  name: type
+  label: type
+- type: text
+  name: subtype
+  label: subtype
+- type: number
+  name: order
+  label: order
+- type: file
+  name: featuredImage
+  label: featuredImage
+- type: text
+  name: subtitle
+  label: subtitle
