@@ -131,11 +131,12 @@ hr {
   height: 3px;
   border: none;
   background: var(--primary-text);
-  opacity: 0.16;
+  opacity: 0.1;
   max-width: 250px;
   text-align: left;
   margin-top: 25px;
   margin-left: 0px;
+  margin-bottom: 26px;
 }
 .big {
   font-size: var(--big-text-size); //20px
@@ -230,7 +231,7 @@ h3 {
 }
 .spacer {
   display: block;
-  height: 28px;
+  height: 30px;
 }
 @media all and (max-width: $mobile-breakpoint){
   .hidden{

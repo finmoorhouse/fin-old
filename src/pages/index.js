@@ -15,7 +15,7 @@ const IndexPage = () => (
       <h1 className="page-title">About me</h1>
       <hr />
       <p>
-        I recently graduated in philosophy from Cambridge, and now I'm assistant to <a href="https://en.wikipedia.org/wiki/Toby_Ord" target="_none">Toby Ord</a>, and an incoming research scholar, at Oxford University's <a href="https://www.fhi.ox.ac.uk/" target="_none">Future of Humanity Institute</a>. I sometimes <a href="https://github.com/finmoorhouse" target="_none">code</a>, <Link to="/writing">write</Link> things, and make films.
+        I'm a research scholar and assistant to <a href="https://en.wikipedia.org/wiki/Toby_Ord" target="_none">Toby Ord</a> at Oxford University's <a href="https://www.fhi.ox.ac.uk/" target="_none">Future of Humanity Institute</a>. Before that, I did philosophy at the University of Cambridge. I sometimes <a href="https://github.com/finmoorhouse" target="_none">code</a>, <Link to="/writing">write</Link> things, and make films.
       </p>
       <p>
         I co-host a podcast called <a href="https://www.hearthisidea.com" target="_none">
@@ -26,10 +26,10 @@ const IndexPage = () => (
       </p>
       <p>
         Also: I'm currently working on a{" "}
-        <Link to="/portfolio/packhorse">documentary</Link>, I just finished interning with{" "}
+        <Link to="/portfolio/packhorse">documentary</Link>, I recently interned with{" "}
         <a href="https://www.charityentrepreneurship.com/" target="_none">
           these folks
-        </a>, and now I help  <a href="https://en.wikipedia.org/wiki/Liv_Boeree" target="_none">
+        </a>, and I help  <a href="https://en.wikipedia.org/wiki/Liv_Boeree" target="_none">
           Liv Boeree
         </a> make videos like <a href="https://youtu.be/kM7J56OxA6w" target="_none">
           this
@@ -47,9 +47,9 @@ const IndexPage = () => (
         Lastly, I'm interested in{" "}
         <a href="https://www.effectivealtruism.org/" target="blank">
           effective altruism
-        </a>{" "}
-        and related ideas like longtermism and existential risk. I write about this kind of thing on my <Link to="/writing">writing</Link>{" "}
-        page and elsewhere.
+        </a>
+        , longtermism, and existential risk. I write about this kind of thing on my <Link to="/writing">writing</Link>{" "}
+        page.
       </p>
       <p>
         I{" "}
