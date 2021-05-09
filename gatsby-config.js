@@ -1,3 +1,4 @@
+require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `Fin Moorhouse`,
@@ -62,6 +63,16 @@ module.exports = {
 
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    // {
+    //   resolve: `gatsby-source-cloudinary`,
+    //   options: {
+    //     cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+    //     apiKey: process.env.CLOUDINARY_API_KEY,
+    //     apiSecret: process.env.CLOUDINARY_API_SECRET,
+    //     resourceType: `image`,
+    //     prefix: `gatsby-source-cloudinary/` 
+    //   }
+    // },
     {
       resolve: `gatsby-plugin-feed-mdx`,
       options: {
@@ -192,32 +203,20 @@ module.exports = {
       options: {
         name: "posts",
         path: `${__dirname}/src/posts/`,
-      },
+      }
     },
+    //https://www.gatsbyjs.com/plugins/gatsby-transformer-cloudinary/
     // {
-    //   resolve: `gatsby-plugin-google-analytics`,
+    //   resolve: 'gatsby-transformer-cloudinary',
     //   options: {
-    //     trackingId: "UA-44315602-2",
-    //     //Defines where to place the tracking script - `true` in the head and `false` in the body
-    //     head: true,
-    //     // exclude: [
-    //     //  "/portfolio/**",
-    //     //],
-    //     //  Setting this parameter is optional
-    //     anonymize: true,
-    //     //Setting this parameter is also optional
-    //     respectDNT: true,
+    //     cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+    //     apiKey: process.env.CLOUDINARY_API_KEY,
+    //     apiSecret: process.env.CLOUDINARY_API_SECRET,
+    //     uploadFolder: 'gatsby-cloudinary',
     //   },
     // },
-    // {
-    //   resolve: `gatsby-plugin-gtag`,
-    //   options: {
-    //     // replace `UA-XXXXXXXXX-X` with your own Google Analytics Tracking ID
-    //     trackingId: `G-49DJR9BK46`,
-    //     head:true,
-    //     anonymize: true,
-    //   },
-    // },
+  
+
     {
       resolve: `gatsby-plugin-goatcounter`,
       options: {

@@ -29,8 +29,15 @@ const Layout = ({ children, path, theme }) => {
     <>
       <div className={"content-div " + (theme ? "light" : "dark")}>
         <Helmet>
-          <link
+          {/*
+            <link
             href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300|Chivo:400,700|Merriweather:300&display=swap"
+            rel="stylesheet"
+          />
+          */}
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=IBM+Plex+Mono:wght@300&family=Lora&display=swap"
             rel="stylesheet"
           />
           <link href="https://github.com/finmoorhouse" rel="me" />
@@ -45,12 +52,10 @@ const Layout = ({ children, path, theme }) => {
           {/* Delete below if not using */}
           {/*  <link rel="stylesheet" href="https://use.typekit.net/nnv1akw.css"></link>  */}
         </Helmet>
-        <div className='nav-content-wrapper'>
+        <div className="nav-content-wrapper">
           <Header siteTitle={data.site.siteMetadata.title} />
-            <DarkModeToggle />
-          <main className={path}>
-            {children}
-          </main>
+          <DarkModeToggle />
+          <main className={path}>{children}</main>
         </div>
       </div>
     </>

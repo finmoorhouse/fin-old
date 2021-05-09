@@ -2,7 +2,7 @@
 
 html,
 body {
-  font-family: "Merriweather", "Lora", serif;
+  font-family: "Lora", "Merriweather", serif;
   /*background-color: coral;*/
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ h3 {
 }
 h1 {
   font-size: 70px;
-  font-family: "Karla", "Space Mono", "Merriweather", sans-serif;
+  font-family:"Chivo", "Lora", "Merriweather", sans-serif;
   font-weight: bold;
   color: white;
   padding-top: 30px;

@@ -5,6 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+const path = require('path')
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const result = await graphql(`
       query {
@@ -36,3 +38,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     });
   };
   
+  exports.onCreateWebpackConfig = ({ actions }) => {
+    actions.setWebpackConfig({
+      resolve: {
+        modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+      },
+    })
+  }

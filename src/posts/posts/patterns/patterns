@@ -1,0 +1,15 @@
+---
+title: How Leopards Get Spots
+slug: patterns
+author: Fin Moorhouse
+path: /writing/patterns
+type: post
+subtype: misc
+date: 2021-04-11
+featuredImage: './leopard.jpg'
+---
+import { Test } from "components/writing/test";
+
+This is a test.
+<Test />
+<SingleImage />
