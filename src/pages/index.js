@@ -21,8 +21,7 @@ const IndexPage = () => (
         I co-host a podcast called <a href="https://www.hearthisidea.com" target="_none">
           Hear This Idea
         </a>, which showcases new
-        thinking from academics and innovators in philosophy and the social
-        sciences.
+        thinking in philosophy, the social sciences, and effective altruism.
       </p>
       <p>
         Also: I'm currently working on a{" "}
