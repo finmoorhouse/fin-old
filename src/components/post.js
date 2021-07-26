@@ -27,6 +27,10 @@ export const query = graphql`
       }
       body
       tableOfContents
+      timeToRead
+      wordCount{
+        words
+      }
     }
   }
 `
@@ -47,11 +51,12 @@ const PostTemplate = function({ data: { mdx: post } }) {
       <div className={"page-wrapper post h-entry " + (post.frontmatter.type==="post" && "post-wrapper")}>
         
         <h1 className="page-title">{post.frontmatter.title}</h1>
+
   <a rel='Author' className='p-author h-card hidden' href="https://www.finmoorhouse.com">{post.frontmatter.author}</a>
   <a className="u-url hidden" href={`https://www.finmoorhouse.com${post.frontmatter.path}`}>…</a>
   {(!post?.tableOfContents?.items || post.frontmatter.type==="portfolio") && <hr />}
         {(post?.tableOfContents?.items &&  post.frontmatter.type==="post") && (
-        <TableOfContents items={post.tableOfContents.items} />
+        <TableOfContents items={post.tableOfContents.items} wordCount={post.wordCount.words} timeToRead={post.timeToRead}/>
       )}
         <MDXRenderer>{post.body}</MDXRenderer>
         <Link className="big back-button" to={backTo}>

@@ -20,6 +20,7 @@ const TableOfContents = props => {
     <details className='table-of-contents'>
       <summary>Table of Contents</summary>
       {renderItems(props.items, 1)}
+      <p class='toc-wordcount'>{props.timeToRead} minute read ({props.wordCount} words)</p>
     </details>
   )
 }
