@@ -1,4 +1,5 @@
 @import "variables";
+@import "tufte";
 
 .anchor {
   display: none;
@@ -28,6 +29,9 @@
         }
       }
     }
+  }
+  h4{
+    font-family: "Chivo", "Open Sans", sans-serif;
   }
 }
 @media all and (max-width: 600px) {
@@ -222,5 +226,26 @@ blockquote p {
   }
   .aside {
     font-size: calc(1.1vw + 12px);
+    //flex-direction: column;
   }
+  .aside::before{
+  display:none;
+  }
+}
+
+// Footnotes
+.footnote-backref{
+  margin-left: 8px;
+}
+.footnote-ref{
+  margin-left: 3px;
+  text-decoration: none;
+  background: var(--primary-bg);
+  border-radius: 5px;
+  padding: 0 5px;
+  box-sizing: content-box;
+}
+.footnote-ref-example{
+  background: var(--secondary-bg);
+  cursor: pointer;
 }
