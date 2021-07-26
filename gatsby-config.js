@@ -55,6 +55,7 @@ module.exports = {
             },
           },
           `gatsby-remark-copy-linked-files`,
+          'gatsby-remark-numbered-footnotes',
         ],
       },
     },

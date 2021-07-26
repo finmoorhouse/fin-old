@@ -25,6 +25,7 @@
     "gatsby-remark-copy-linked-files": "^2.3.11",
     "gatsby-remark-images": "^3.3.17",
     "gatsby-remark-katex": "^3.3.9",
+    "gatsby-remark-numbered-footnotes": "^1.0.1",
     "gatsby-source-cloudinary": "^0.1.14",
     "gatsby-source-filesystem": "^2.3.18",
     "gatsby-transformer-cloudinary": "^2.2.4",

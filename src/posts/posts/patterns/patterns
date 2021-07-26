@@ -13,3 +13,8 @@ import { Test } from "components/writing/test";
 This is a test.
 <Test />
 <SingleImage />
+I can take stuff from my rule 30 tweet thread.
+
+<label for="sn-extensive-use-of-sidenotes-2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-extensive-use-of-sidenotes-2" class="margin-toggle"/><span class="sidenote">Here is how you do a sidenote sidenote.</span>
+
+<label for="sn-extensive-use-of-sidenotes" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-extensive-use-of-sidenotes" class="margin-toggle"/><span class="sidenote">This is a another sidenote.</span>
