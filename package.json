@@ -37,6 +37,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
+    "remark-html-katex": "^3.0.0",
     "remark-math": "^2.0.1"
   },
   "devDependencies": {

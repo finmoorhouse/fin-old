@@ -32,6 +32,7 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/components/layout.js"),
         },
+        remarkPlugins: [ require('remark-math'), require('remark-html-katex') ] ,
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-autolink-headers`,
@@ -47,13 +48,6 @@ module.exports = {
               maxWidth: 1600,
             },
           },
-          {
-            resolve: `gatsby-remark-katex`,
-            options: {
-              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
-              strict: `ignore`,
-            },
-          },
           `gatsby-remark-copy-linked-files`,
           'gatsby-remark-numbered-footnotes',
         ],
@@ -61,7 +55,6 @@ module.exports = {
     },
    
     `gatsby-transformer-sharp`,
-
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     // {
@@ -186,7 +179,6 @@ module.exports = {
         ],
       },
     },
-    `remark-math`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
