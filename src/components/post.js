@@ -15,6 +15,7 @@ export const query = graphql`
       frontmatter {
         title
         author
+        slug
         path
         type
         featuredImage {
@@ -38,15 +39,20 @@ export const query = graphql`
 
 const PostTemplate = function({ data: { mdx: post } }) {
   let backTo = "/writing"
+  let sidenotesStyle = ""
   if (post.frontmatter.type === "portfolio") {
     backTo = "/portfolio"
   }
+  if (post.frontmatter.slug.includes("sidenotes")) {
+    sidenotesStyle = "writing-with-sidenotes"
+  }
 
   return (
-    <Layout>
+    <Layout pageType={sidenotesStyle}>
       <SEO
         title={post.frontmatter.title}
         myFeaturedImage={post.frontmatter.featuredImage}
+        
       />
       <div className={"page-wrapper post h-entry " + (post.frontmatter.type==="post" && "post-wrapper")}>
         

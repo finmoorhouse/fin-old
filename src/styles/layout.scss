@@ -12,6 +12,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-weight: 200;
+  background: var(--secondary-bg);
 }
 .post {
   p,
@@ -75,6 +76,7 @@ a {
   margin: auto;
   max-width: 1040px; // One day I'll decide on the width...
   overflow: auto;
+  overflow-x: hidden;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -147,8 +149,8 @@ h3 {
   font-weight: 400;
   line-height: 95%;
 }
-.back-button{
-  font-family: 'Chivo', sans-serif;
+.back-button {
+  font-family: "Chivo", sans-serif;
   font-size: 22px;
   display: block;
   text-align: center;
@@ -186,8 +188,7 @@ h3 {
     display: block;
   }
   main {
-  padding-top: 30px;
-
+    padding-top: 30px;
   }
   hr {
     height: 2px;
@@ -213,17 +214,18 @@ h3 {
   }
   .nav-content-wrapper {
     flex-direction: column;
+    overflow-x: hidden;
   }
   #nav-wrapper {
     height: 100%;
   }
   .sidebar-menu-item * {
     //font-family: "IBM Plex Mono";
-    
+
     text-align: left;
     text-decoration-skip: edges;
   }
-  .active{
+  .active {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-underline-offset: 3px;
@@ -233,14 +235,14 @@ h3 {
   display: block;
   height: 30px;
 }
-@media all and (max-width: $mobile-breakpoint){
-  .hidden{
+@media all and (max-width: $mobile-breakpoint) {
+  .hidden {
     display: none;
   }
-  .visible{
+  .visible {
     display: flex;
   }
-  }
+}
 ::-webkit-scrollbar {
   width: 15px;
 }

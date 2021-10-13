@@ -14,7 +14,7 @@ import "../styles/layout.scss"
 import { Helmet } from "react-helmet"
 import DarkModeToggle from "./dark-mode-toggle"
 
-const Layout = ({ children, path, theme }) => {
+const Layout = ({ children, path, theme, pageType }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,7 +27,7 @@ const Layout = ({ children, path, theme }) => {
 
   return (
     <>
-      <div className={"content-div " + (theme ? "light" : "dark")}>
+      <div className={"content-div " + (theme ? "light" : "dark") + " " + pageType}>
         <Helmet>
           {/*
             <link

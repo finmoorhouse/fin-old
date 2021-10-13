@@ -1,2 +1,58 @@
+// This is styles specific to a single /writing post.
 @import "variables";
 
+.writing-with-sidenotes {
+  #nav-wrapper {
+    height: 100%;
+  }
+  .nav-content-wrapper {
+    flex-direction: column;
+  }
+  nav {
+    position: relative;
+    width: 100vw;
+    padding: 0;
+  }
+  @media (min-width: $mobile-breakpoint) {
+    .menu-wrapper {
+      width: 400px;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 14px 0 4px 0;
+      position: relative;
+      float: left;
+      margin-right: 100px;
+      margin-left: 11%;
+    }
+    .header-title {
+      display: none;
+    }
+  }
+
+  main {
+    padding-left: 12.5%;
+  }
+  .nav-content-wrapper {
+    max-width: 1400px;
+  }
+  .page-wrapper {
+    margin-left: 0;
+    position: relative;
+    left: 0;
+    width: 62%;
+  }
+  .active:before {
+    content: "↓";
+  }
+  @media (max-width: 1050px) {
+    .page-wrapper {
+      width: 84%;
+      max-width: 750px;
+      margin: auto;
+    }
+    main {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

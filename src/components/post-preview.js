@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import "../styles/writing.scss"
 
+
 const PostPreview = ({ post }) => (
   <div className='post-preview'>
     <h3 className="post-title">
