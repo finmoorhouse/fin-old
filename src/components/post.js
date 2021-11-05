@@ -18,6 +18,7 @@ export const query = graphql`
         slug
         path
         type
+        canonicalUrl
         featuredImage {
           childImageSharp {
             sizes(maxWidth: 630) {
@@ -52,7 +53,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
       <SEO
         title={post.frontmatter.title}
         myFeaturedImage={post.frontmatter.featuredImage}
-        
+        canonicalUrl={post.frontmatter.canonicalUrl}
       />
       <div className={"page-wrapper post h-entry " + (post.frontmatter.type==="post" && "post-wrapper")}>
         

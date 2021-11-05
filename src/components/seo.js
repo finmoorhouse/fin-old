@@ -10,7 +10,15 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, pageThumb, myFeaturedImage }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  title,
+  pageThumb,
+  myFeaturedImage,
+  canonicalUrl
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -28,9 +36,11 @@ function SEO({ description, lang, meta, title, pageThumb, myFeaturedImage }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description;
-  const featuredImageSrc = myFeaturedImage && myFeaturedImage.childImageSharp.sizes.src;
-  const pageThumbnail =  `${site.siteMetadata.url}${featuredImageSrc || (pageThumb || site.siteMetadata.image)}`;
+  const metaDescription = description || site.siteMetadata.description
+  const featuredImageSrc =
+    myFeaturedImage && myFeaturedImage.childImageSharp.sizes.src
+  const pageThumbnail = `${site.siteMetadata.url}${featuredImageSrc ||
+    pageThumb || site.siteMetadata.image}`
   const myTitle = title || site.siteMetadata.title
 
   return (
@@ -40,6 +50,9 @@ function SEO({ description, lang, meta, title, pageThumb, myFeaturedImage }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={
+        canonicalUrl ? [{ rel: "canonical", key: "canonical-url", href: canonicalUrl }] : []
+      }
       meta={[
         {
           name: `description`,
@@ -90,15 +103,15 @@ function SEO({ description, lang, meta, title, pageThumb, myFeaturedImage }) {
           content: pageThumbnail,
         },
         {
-          property : `og:image`,
+          property: `og:image`,
           content: pageThumbnail,
         },
         {
-          name:`image`,
+          name: `image`,
           content: pageThumbnail,
         },
         {
-          name:`monetization`,
+          name: `monetization`,
           content: `ilp.uphold.com/4rHyDzRz66Dw`,
         },
       ].concat(meta)}
