@@ -1,6 +1,15 @@
 @import "variables";
 //@import "debugging";
 
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li{
+  margin-bottom: 10px;
+}
 .anchor {
   display: none;
 }
@@ -126,6 +135,9 @@
   width: 50vw;
   margin: 30px auto;
   max-width: 450px;
+}
+strong{
+  font-weight: 700;
 }
 
 table {
