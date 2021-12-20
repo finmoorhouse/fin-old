@@ -37,7 +37,7 @@ const Layout = ({ children, path, theme, pageType }) => {
           */}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=IBM+Plex+Mono:wght@300&family=Lora&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700&family=IBM+Plex+Mono:wght@300&family=Lora:ital,wght@0,400;0,700;1,400&display=swap"
             rel="stylesheet"
           />
           <link href="https://github.com/finmoorhouse" rel="me" />
