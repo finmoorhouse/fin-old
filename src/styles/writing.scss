@@ -1,14 +1,14 @@
 @import "variables";
 //@import "debugging";
 
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-li{
-  margin-bottom: 10px;
+.page-wrapper {
+  li {
+    margin-bottom: 10px;
+  }
 }
 .anchor {
   display: none;
@@ -136,7 +136,7 @@ li{
   margin: 30px auto;
   max-width: 450px;
 }
-strong{
+strong {
   font-weight: 700;
 }
 
@@ -235,7 +235,7 @@ blockquote p {
   .post-line {
     margin-left: 0;
   }
-  table{
+  table {
     line-height: 1.2;
   }
   .post {
@@ -364,10 +364,10 @@ label {
   line-height: 0;
   font-size: 75%;
 }
-.display-on-smaller-screens{
+.display-on-smaller-screens {
   display: none;
 }
-.display-on-larger-screens{
+.display-on-larger-screens {
   display: inline;
 }
 @media (max-width: 1050px) {
@@ -396,10 +396,10 @@ label {
     cursor: pointer;
   }
 
-  .display-on-smaller-screens{
+  .display-on-smaller-screens {
     display: inline;
   }
-  .display-on-larger-screens{
+  .display-on-larger-screens {
     display: none;
   }
 }
