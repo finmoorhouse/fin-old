@@ -32,7 +32,8 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/components/layout.js"),
         },
-        //remarkPlugins: [ require('remark-math'), require('remark-html-katex') ] ,
+        //remarkPlugins: [ require('remark-math')], //, require('remark-html-katex') ] ,
+        //rehypePlugins: [require("rehype-katex")],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-autolink-headers`,
@@ -50,7 +51,8 @@ module.exports = {
           },
           `gatsby-remark-copy-linked-files`,
           'gatsby-remark-numbered-footnotes',
-        ],
+          `gatsby-remark-katex`, //Why doesn't this do anything!
+        ]
       },
     },
    

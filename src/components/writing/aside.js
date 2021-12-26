@@ -4,7 +4,7 @@ function Aside(props) {
   /* The for='' and id='' need to be different. */
   return (
     <>
-      <span class='aside'>
+      <span className='aside'>
           <span>
             {props.children}
           </span>
