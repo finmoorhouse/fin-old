@@ -19,9 +19,7 @@ const usePosts = () => {
             )
             featuredImage {
               childImageSharp {
-                sizes(maxWidth:500){
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(width: 500)
               }
             } 
           }

@@ -32,7 +32,7 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/components/layout.js"),
         },
-        remarkPlugins: [ require('remark-math'), require('remark-html-katex') ] ,
+        //remarkPlugins: [ require('remark-math'), require('remark-html-katex') ] ,
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-autolink-headers`,
@@ -55,6 +55,7 @@ module.exports = {
     },
    
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     // {
@@ -67,8 +68,9 @@ module.exports = {
     //     prefix: `gatsby-source-cloudinary/` 
     //   }
     // },
+    // Below switched from gatsby-plugin-feed-mdx
     {
-      resolve: `gatsby-plugin-feed-mdx`,
+      resolve: `gatsby-plugin-feed`,
       options: {
         query: `
           {
@@ -179,6 +181,7 @@ module.exports = {
         ],
       },
     },
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -210,15 +213,15 @@ module.exports = {
     // },
   
 
-    {
-      resolve: `gatsby-plugin-goatcounter`,
-      options: {
-        // Either `code` or `selfHostUrl` is required.
-        // REQUIRED IF USING HOSTED GOATCOUNTER! https://[my_code].goatcounter.com
-        code: "finmoorhouse",
-        head: false,
-        pixel: true,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-goatcounter`,
+    //   options: {
+    //     // Either `code` or `selfHostUrl` is required.
+    //     // REQUIRED IF USING HOSTED GOATCOUNTER! https://[my_code].goatcounter.com
+    //     code: "finmoorhouse",
+    //     head: false,
+    //     pixel: true,
+    //   },
+    // },
   ],
 }

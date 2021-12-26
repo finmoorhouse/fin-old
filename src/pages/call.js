@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 class CallPage extends React.Component {
   componentDidMount() {
@@ -11,7 +11,7 @@ class CallPage extends React.Component {
     return (
       <>
         <Layout>
-          <SEO title="📞 Call" pageThumb="/meta-image.jpg" />
+          <Seo title="📞 Call" pageThumb="/meta-image.jpg" />
           <h1 className="page-title">Call</h1>
           <hr />
           <p>

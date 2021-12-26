@@ -53,9 +53,11 @@ const Layout = ({ children, path, theme, pageType }) => {
           {/*  <link rel="stylesheet" href="https://use.typekit.net/nnv1akw.css"></link>  */}
         </Helmet>
         <div className="nav-content-wrapper">
+        {/* <React.StrictMode> */}
           <Header siteTitle={data.site.siteMetadata.title} />
           <DarkModeToggle />
           <main className={path}>{children}</main>
+          {/* </React.StrictMode> */}
         </div>
       </div>
     </>

@@ -4,14 +4,14 @@ import usePortfolio from "../hooks/use-portfolio"
 import PortfolioPreview from "../components/portfolio-preview"
 import "../styles/portfolio.scss"
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
-export default () => {
+const AllPortfolioPosts = () => {
   const posts = usePortfolio()
   return (
     <>
       <Layout path="portfolio-colour">
-      <SEO title="🎨 Portfolio" pageThumb = "/meta-portfolio.jpg" />
+      <Seo title="🎨 Portfolio" pageThumb = "/meta-portfolio.jpg" />
         <h1 className='page-title'>Portfolio</h1>
         <hr/>
         <br />
@@ -25,3 +25,5 @@ export default () => {
     </>
   )
 }
+
+export default AllPortfolioPosts

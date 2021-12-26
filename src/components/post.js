@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import "../styles/post.scss"
 import "katex/dist/katex.min.css"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import TableOfContents from "../components/table-of-contents"
 
 
@@ -21,9 +21,7 @@ export const query = graphql`
         canonicalUrl
         featuredImage {
           childImageSharp {
-            sizes(maxWidth: 630) {
-              ...GatsbyImageSharpSizes
-            }
+            fixed{src}
           }
         }
       }
@@ -50,7 +48,7 @@ const PostTemplate = function({ data: { mdx: post } }) {
 
   return (
     <Layout pageType={sidenotesStyle}>
-      <SEO
+      <Seo
         title={post.frontmatter.title}
         myFeaturedImage={post.frontmatter.featuredImage}
         canonicalUrl={post.frontmatter.canonicalUrl}

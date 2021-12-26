@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="👋 About Me" pageThumb="/meta-about.jpg" />
+    <Seo title="👋 About Me" pageThumb="/meta-about.jpg" />
 
     <div className="page-wrapper index-wrapper big h-card">
       <a className="p-name u-url u-uid hidden" href="https://finmoorhouse.com/">

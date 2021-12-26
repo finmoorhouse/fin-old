@@ -19,9 +19,7 @@ const usePortfolio = () => {
             subtype
             featuredImage {
               childImageSharp {
-                sizes(maxWidth: 400, maxHeight: 240) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(width: 400)
               }
             }
           }
