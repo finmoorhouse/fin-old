@@ -18,8 +18,11 @@ const usePortfolio = () => {
             subtitle
             subtype
             featuredImage {
-              childImageSharp {
-                gatsbyImageData(width: 400, height: 250, layout: CONSTRAINED)
+
+              childCloudinaryAsset {
+                fluid(maxWidth: 400, transformations: ["ar_1.5","c_fill","g_center","q_auto:best"]) {
+                  ...CloudinaryAssetFluid
+                }
               }
             }
           }
@@ -29,7 +32,12 @@ const usePortfolio = () => {
     }
   `)
 
-  return data.allMdx.nodes.map(post => ({
+  // Also in featuredImage query until I switched to Cloudinary — 
+  // childImageSharp {
+  //   gatsbyImageData(width: 400, height: 250, layout: CONSTRAINED)
+  // }
+
+  return data.allMdx.nodes.map((post) => ({
     title: post.frontmatter.title,
     author: post.frontmatter.author,
     slug: post.frontmatter.slug,

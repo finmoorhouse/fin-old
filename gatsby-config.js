@@ -52,7 +52,7 @@ module.exports = {
           },
           `gatsby-remark-copy-linked-files`,
           'gatsby-remark-numbered-footnotes',
-          `gatsby-remark-katex`, //Why doesn't this do anything!
+          `gatsby-remark-katex`,
           //`remark-math`,
         ]
       },
@@ -62,16 +62,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    // {
-    //   resolve: `gatsby-source-cloudinary`,
-    //   options: {
-    //     cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-    //     apiKey: process.env.CLOUDINARY_API_KEY,
-    //     apiSecret: process.env.CLOUDINARY_API_SECRET,
-    //     resourceType: `image`,
-    //     prefix: `gatsby-source-cloudinary/` 
-    //   }
-    // },
     // Below switched from gatsby-plugin-feed-mdx
     {
       resolve: `gatsby-plugin-feed`,
@@ -205,26 +195,24 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       }
     },
-    // {
-    //   resolve: 'gatsby-transformer-cloudinary',
-    //   options: {
-    //     cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-    //     apiKey: process.env.CLOUDINARY_API_KEY,
-    //     apiSecret: process.env.CLOUDINARY_API_SECRET,
-    //     uploadFolder: 'gatsby-cloudinary',
-    //   },
-    // },
-  
-
-    // {
-    //   resolve: `gatsby-plugin-goatcounter`,
-    //   options: {
-    //     // Either `code` or `selfHostUrl` is required.
-    //     // REQUIRED IF USING HOSTED GOATCOUNTER! https://[my_code].goatcounter.com
-    //     code: "finmoorhouse",
-    //     head: false,
-    //     pixel: true,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: `image`,
+        prefix: `gatsby-source-cloudinary/` 
+      }
+    },
+    {
+      resolve: 'gatsby-transformer-cloudinary',
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        uploadFolder: 'gatsby-cloudinary',
+      },
+    },
   ],
 }
