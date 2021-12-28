@@ -205,7 +205,6 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       }
     },
-    //https://www.gatsbyjs.com/plugins/gatsby-transformer-cloudinary/
     // {
     //   resolve: 'gatsby-transformer-cloudinary',
     //   options: {

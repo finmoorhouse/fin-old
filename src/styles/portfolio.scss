@@ -37,6 +37,12 @@
   justify-items: center;
   justify-content: center;
 }
+.portfolio-image__inner {
+  margin: auto;
+  display: block;
+  max-width: 400px;
+}
+
 .portfolio-style {
   background-color: #dbc3a3;
 }
@@ -74,6 +80,8 @@
   margin-bottom: 0;
   color: var(--primary-text);
   opacity: 0.7;
+  max-width: 400px;
+  margin:auto;
 }
 .gatsby-resp-image-image {
   max-width: 100% !important;

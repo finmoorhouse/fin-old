@@ -19,7 +19,7 @@ const usePortfolio = () => {
             subtype
             featuredImage {
               childImageSharp {
-                gatsbyImageData(width: 400)
+                gatsbyImageData(width: 400, height: 250, layout: CONSTRAINED)
               }
             }
           }

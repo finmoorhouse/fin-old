@@ -9,7 +9,7 @@ function PortfolioPreview({ post }) {
       <Link to={post.path}>
         <div className="portfolio-image">
           {/*<Img sizes={post.featuredImage.childImageSharp.sizes} />*/}
-          <GatsbyImage image={image} alt={post.title} />
+          <GatsbyImage image={image} alt={post.title} className="portfolio-image__inner"/>
         </div>
         <h3 className="portfolio-title">{post.title}</h3>
       </Link>
