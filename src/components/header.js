@@ -16,6 +16,7 @@ const Header = ({ siteTitle }) => {
             <DarkModeToggle mobileMoon="false" />
             <div
               role="button"
+              aria-label="Menu"
               tabIndex={0}
               className={
                 "hamburger " + (menu === "visible" ? "checked" : "unchecked")
