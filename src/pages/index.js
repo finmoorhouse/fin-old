@@ -30,17 +30,15 @@ const IndexPage = () => (
           these folks
         </a>, and I help  <a href="https://en.wikipedia.org/wiki/Liv_Boeree" target="_none">
           Liv Boeree
-        </a> make videos like <a href="https://youtu.be/kM7J56OxA6w" target="_none">
-          this
-        </a>.
-         Read my CV{" "}
+        </a> make <a href="https://youtu.be/kM7J56OxA6w" target="_none">videos like this
+        </a>.{" "}
         <a
           href="https://www.finmoorhouse.com/Fin-Moorhouse-CV.pdf"
           target="_none"
         >
-          here
+         Read my CV here
         </a>
-        , and read more about what I can do <Link to="/skills">here</Link>.
+        , and read <Link to="/skills">more about what I can do here</Link>.
       </p>
       <p>
         Lastly, I'm interested in{" "}
