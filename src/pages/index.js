@@ -15,45 +15,66 @@ const IndexPage = () => (
       <h1 className="page-title">About me</h1>
       <hr />
       <p>
-        I'm a research scholar and assistant to <a href="https://en.wikipedia.org/wiki/Toby_Ord" target="_none">Toby Ord</a> at Oxford University's <a href="https://www.fhi.ox.ac.uk/" target="_none">Future of Humanity Institute</a>. Before that, I did philosophy at the University of Cambridge. I sometimes <a href="https://github.com/finmoorhouse" target="_none">code</a>, <Link to="/writing">write</Link> things, and make films.
-      </p>
-      <p>
-        I co-host a podcast called <a href="https://www.hearthisidea.com" target="_none">
-          Hear This Idea
-        </a>, which showcases new
-        thinking in philosophy, the social sciences, and effective altruism.
-      </p>
-      <p>
-        Also: I'm currently working on a{" "}
-        <Link to="/portfolio/packhorse">documentary</Link>, I recently interned with{" "}
-        <a href="https://www.charityentrepreneurship.com/" target="_none">
-          these folks
-        </a>, and I help  <a href="https://en.wikipedia.org/wiki/Liv_Boeree" target="_none">
-          Liv Boeree
-        </a> make <a href="https://youtu.be/kM7J56OxA6w" target="_none">videos like this
-        </a>.{" "}
-        <a
-          href="https://www.finmoorhouse.com/Fin-Moorhouse-CV.pdf"
-          target="_none"
-        >
-         Read my CV here
+        I'm a Research Scholar and assistant to{" "}
+        <a href="https://en.wikipedia.org/wiki/Toby_Ord" target="_none">
+          Toby Ord
+        </a>{" "}
+        at Oxford University's{" "}
+        <a href="https://www.fhi.ox.ac.uk/" target="_none">
+          Future of Humanity Institute
         </a>
-        , and read <Link to="/skills">more about what I can do here</Link>.
+        . Before that, I interned with{" "}
+        <a href="https://www.charityentrepreneurship.com/" target="_none">
+          Charity Entrepreneurship
+        </a>
+        , and helped{" "}
+        <a href="https://en.wikipedia.org/wiki/Liv_Boeree" target="_none">
+          Liv Boeree
+        </a>{" "}
+        make{" "}
+        <a href="https://youtu.be/kM7J56OxA6w" target="_none">
+          videos like this
+        </a>
+        . Before <i>that</i>, I did philosophy at Cambridge uni.
       </p>
       <p>
-        Lastly, I'm interested in{" "}
+        I co-host a podcast called{" "}
+        <a href="https://www.hearthisidea.com" target="_none">
+          Hear This Idea
+        </a>
+        , which showcases new thinking in philosophy, the social sciences, and{" "}
         <a href="https://www.effectivealtruism.org/" target="blank">
           effective altruism
         </a>
-        , longtermism, and existential risk. I write about this kind of thing on my <Link to="/writing">writing</Link>{" "}
-        page.
+        .
+      </p>
+
+      <p>
+        I'm interested in{" "}
+        <a href="https://www.effectivealtruism.org/" target="blank">
+          effective altruism
+        </a>
+        ,{" "}
+        <a href="https://www.longtermism.com" target="blank">
+          longtermism
+        </a>
+        , and{" "}
+        <a href="https://www.theprecipice.com" target="blank">
+          existential risk
+        </a>
+        . I write about this kind of thing on my{" "}
+        <Link to="/writing">writing</Link> page.
       </p>
       <p>
-        I{" "}
+        In my free time I{" "}
         <a href="http://www.goodreads.com/finm" target="blank">
           read
-        </a>{" "}
-        and play chess badly in my free time.
+        </a>
+        , listen to{" "}
+        <a href="https://rateyourmusic.com/~finm" target="blank">
+           music
+        </a>
+        , and play chess <a href="https://lichess.org/@/finjm" target="blank">badly</a>.
       </p>
     </div>
   </Layout>
