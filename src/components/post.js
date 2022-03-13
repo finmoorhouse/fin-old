@@ -8,9 +8,8 @@ import "katex/dist/katex.min.css"
 import Seo from "../components/seo"
 import TableOfContents from "../components/table-of-contents"
 
-
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     mdx(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         title
@@ -21,22 +20,23 @@ export const query = graphql`
         canonicalUrl
         featuredImage {
           childImageSharp {
-            fixed{src}
+            fixed(width: 1200) {
+              src
+            }
           }
         }
       }
       body
       tableOfContents
       timeToRead
-      wordCount{
+      wordCount {
         words
       }
     }
   }
 `
 
-
-const PostTemplate = function({ data: { mdx: post } }) {
+const PostTemplate = function ({ data: { mdx: post } }) {
   let backTo = "/writing"
   let sidenotesStyle = ""
   if (post.frontmatter.type === "portfolio") {
@@ -53,16 +53,36 @@ const PostTemplate = function({ data: { mdx: post } }) {
         myFeaturedImage={post.frontmatter.featuredImage}
         canonicalUrl={post.frontmatter.canonicalUrl}
       />
-      <div className={"page-wrapper post h-entry " + (post.frontmatter.type==="post" && "post-wrapper")}>
-        
+      <div
+        className={
+          "page-wrapper post h-entry " +
+          (post.frontmatter.type === "post" && "post-wrapper")
+        }
+      >
         <h1 className="page-title">{post.frontmatter.title}</h1>
 
-  <a rel='Author' className='p-author h-card hidden' href="https://www.finmoorhouse.com">{post.frontmatter.author}</a>
-  <a className="u-url hidden" href={`https://www.finmoorhouse.com${post.frontmatter.path}`}>…</a>
-  {(!post?.tableOfContents?.items || post.frontmatter.type==="portfolio") && <hr />}
-        {(post?.tableOfContents?.items &&  post.frontmatter.type==="post") && (
-        <TableOfContents items={post.tableOfContents.items} wordCount={post.wordCount.words} timeToRead={post.timeToRead}/>
-      )}
+        <a
+          rel="Author"
+          className="p-author h-card hidden"
+          href="https://www.finmoorhouse.com"
+        >
+          {post.frontmatter.author}
+        </a>
+        <a
+          className="u-url hidden"
+          href={`https://www.finmoorhouse.com${post.frontmatter.path}`}
+        >
+          …
+        </a>
+        {(!post?.tableOfContents?.items ||
+          post.frontmatter.type === "portfolio") && <hr />}
+        {post?.tableOfContents?.items && post.frontmatter.type === "post" && (
+          <TableOfContents
+            items={post.tableOfContents.items}
+            wordCount={post.wordCount.words}
+            timeToRead={post.timeToRead}
+          />
+        )}
         <MDXRenderer>{post.body}</MDXRenderer>
         <Link className="big back-button" to={backTo}>
           {"⟵ back to " + backTo.slice(1)}

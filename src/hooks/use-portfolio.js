@@ -18,9 +18,8 @@ const usePortfolio = () => {
             subtitle
             subtype
             featuredImage {
-
               childCloudinaryAsset {
-                fluid(maxWidth: 400, transformations: ["ar_1.5","c_fill","g_center","q_auto:best"]) {
+                fluid(maxWidth: 1200, transformations: ["ar_1.5","c_fill","g_center","q_auto:best"]) {
                   ...CloudinaryAssetFluid
                 }
               }
