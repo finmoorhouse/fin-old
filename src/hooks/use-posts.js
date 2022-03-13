@@ -19,7 +19,7 @@ const usePosts = () => {
             )
             featuredImage {
               childImageSharp {
-                gatsbyImageData(width: 800)
+                gatsbyImageData(width: 1200)
               }
             } 
           }
