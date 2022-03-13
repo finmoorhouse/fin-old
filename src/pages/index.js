@@ -35,7 +35,7 @@ const IndexPage = () => (
         <a href="https://youtu.be/kM7J56OxA6w" target="_none">
           videos like this
         </a>
-        . Before <i>that</i>, I did philosophy at Cambridge uni.
+        . Before <i>that</i>, I did philosophy at Cambridge.
       </p>
       <p>
         I co-host a podcast called{" "}
