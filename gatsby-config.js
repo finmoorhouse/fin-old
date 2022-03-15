@@ -28,6 +28,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `finmoorhouse.com`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-mdx",
       options: {
         defaultLayouts: {
