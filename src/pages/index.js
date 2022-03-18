@@ -15,7 +15,7 @@ const IndexPage = () => (
       <h1 className="page-title">About me</h1>
       <hr />
       <p>
-        I'm a Research Scholar and assistant to{" "}
+        Right now I'm a Research Scholar and assistant to{" "}
         <a href="https://en.wikipedia.org/wiki/Toby_Ord" target="_none">
           Toby Ord
         </a>{" "}
@@ -23,32 +23,7 @@ const IndexPage = () => (
         <a href="https://www.fhi.ox.ac.uk/" target="_none">
           Future of Humanity Institute
         </a>
-        . Before that, I interned with{" "}
-        <a href="https://www.charityentrepreneurship.com/" target="_none">
-          Charity Entrepreneurship
-        </a>
-        , and helped{" "}
-        <a href="https://en.wikipedia.org/wiki/Liv_Boeree" target="_none">
-          Liv Boeree
-        </a>{" "}
-        make{" "}
-        <a href="https://youtu.be/kM7J56OxA6w" target="_none">
-          videos like this
-        </a>
-        . Before <i>that</i>, I did philosophy at Cambridge.
-      </p>
-      <p>
-        I co-host a podcast called{" "}
-        <a href="https://www.hearthisidea.com" target="_none">
-          Hear This Idea
-        </a>
-        , which showcases new thinking in philosophy, the social sciences, and{" "}
-        <a href="https://www.effectivealtruism.org/" target="blank">
-          effective altruism
-        </a>
-        .
-      </p>
-
+        . 
       <p>
         I'm interested in{" "}
         <a href="https://www.effectivealtruism.org/" target="blank">
@@ -66,6 +41,33 @@ const IndexPage = () => (
         <Link to="/writing">writing</Link> page.
       </p>
       <p>
+        I co-host a podcast called{" "}
+        <a href="https://www.hearthisidea.com" target="_none">
+          Hear This Idea
+        </a>
+        , which showcases new thinking in philosophy, the social sciences, and{" "}
+        <a href="https://www.effectivealtruism.org/" target="blank">
+          effective altruism
+        </a>
+        . I'm also a mentor and panelist for the <a href="https://www.effectiveideas.org/" target="blank">Effective Ideas</a> blog prize.
+      </p>
+      <p>
+      Before this, I interned with{" "}
+        <a href="https://www.charityentrepreneurship.com/" target="_none">
+          Charity Entrepreneurship
+        </a>
+        , and helped{" "}
+        <a href="https://en.wikipedia.org/wiki/Liv_Boeree" target="_none">
+          Liv Boeree
+        </a>{" "}
+        make{" "}
+        <a href="https://youtu.be/kM7J56OxA6w" target="_none">
+          videos
+        </a>
+        . Before <i>that</i>, I did philosophy at Cambridge.
+      </p>
+      </p>
+      <p>
         In my free time I{" "}
         <a href="http://www.goodreads.com/finm" target="blank">
           read
@@ -76,6 +78,7 @@ const IndexPage = () => (
         </a>
         , and play chess <a href="https://lichess.org/@/finjm" target="blank">badly</a>.
       </p>
+      
     </div>
   </Layout>
 )
