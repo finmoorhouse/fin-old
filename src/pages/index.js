@@ -85,7 +85,7 @@ const IndexPage = () => (
           read
         </a>
         , listen to{" "}
-        <a href="https://rateyourmusic.com/~finm" target="blank">
+        <a href="https://rateyourmusic.com/collection/finm/r0.5-5.0,ss.rd" target="blank">
           music
         </a>
         , and play chess{" "}
