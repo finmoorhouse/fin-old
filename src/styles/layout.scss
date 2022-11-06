@@ -255,3 +255,37 @@ h3 {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.episode-image_variable {
+  width: 40vw;
+  min-width: 280px;
+  margin: 50px auto;
+
+  img {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 2px !important;
+  }
+  span {
+    border-radius: 5px;
+  }
+}
+.episode-image_variable > img {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 2px !important;
+}
+.episode-image_variable > span {
+  border-radius: 5px;
+}
+.max-600 {
+  width: 80vw;
+  max-width: 600px;
+}
+.max-500 {
+  width: 75vw;
+  max-width: 500px;
+}
+.max-400 {
+  width: 70vw;
+  max-width: 400px;
+}
