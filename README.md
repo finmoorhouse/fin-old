@@ -1,3 +1,11 @@
-# finmoorhouse.com
+# Fin's personal website (old version)
 
-This is the source for the redesign of my personal website, built with Gatsby.
+## URL
+
+https://finmoorhouse.com/
+
+## About
+
+This is an old version of my personal site and blog, built with [Gatsby JS](https://www.gatsbyjs.com/).
+
+The current version [can be found here](https://github.com/finmoorhouse/fin).
